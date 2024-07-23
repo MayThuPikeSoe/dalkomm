@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    File definitio: Responsive css on all pages
+    Order: header > main > sub pages > footer
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 1663.98px) {
+ 
+}
+@media screen and (max-width: 1470.98px) {
+  .header .gnb {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1300.98px) {
+  .header .gnb a {
+    font-size: 16px;
+  }
+  .header .head_contact strong,
+  .header .head_contact {
+    font-size: 14px;
+  }
+  .header .head_img {
+    width: 180px;
+    height: auto;
+  }
+  .header .head_contact strong {
+    margin-right: 10px;
+  }
+
+  .main_sec_05_conts .sec_05_img {
+    min-width: 500px;
+  }
+  .footer .foot_info_wrpp {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1000.98px) {
+  .header {
+    height: 80px;
+  }
+  .lnb_bg {
+    margin-top: 80px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header .gnb {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
+}
+@media screen and (max-width: 575.98px) {
+  .main_banner_txt {
+    margin-top: -20px;
+    gap: 18px;
+  }
+  .main_banner .swiper-pagination {
+    bottom: 100px !important;
+  }
+  .main_banner_txt h1 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 10px;
+  }
+
+  .mobile_hidden {
+    display: none;
+  }
+
+  .pc_hidden {
+    display: inline-block;
+  }
+
+  .main_banner_txt p {
+    font-size: 16px;
+  }
+
+  .swiper-pagination {
+    gap: 20px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 483px) {
+  .main_banner_txt {
+    gap: 10px;
+  }
+  .main_banner .swiper-pagination-bullet {
+    font-size: 20px;
+  }
+
+  .header .head_contact strong {
+    display: none;
+  }
+  .header .head_contact .txt {
+    display: none;
+  }
+}

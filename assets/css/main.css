@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    File definition: Main page style
+    Order:    Contents > Main top(banner) > Aside
+-------------------------------------------------------------------*/
+
+/* Banner */
+.main_banner {
+  height: 100vh;
+  user-select: none;
+}
+.main_banner_inn {
+  height: 100%;
+}
+.main_banner_swiper {
+  height: 100%;
+  position: relative;
+}
+.main_banner_img {
+  width: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  margin: 0 auto;
+}
+.main_banner_txt {
+  margin-top: -70px;
+  height: 100%;
+  color: var(--bs-white);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+.main_banner_txt p {
+  font-size: 24px;
+  line-height: 28.64px;
+  transition: font-size 0.2s ease-in-out;
+  animation: tit_ani 1s linear;
+}
+.main_banner_txt h1 {
+  font-size: 60px;
+  line-height: 71.6px;
+  transition: font-size 0.5s ease-in-out;
+  animation: tit_ani 1s linear;
+}
+
+/* header btn */
+
+.header span.stress {
+  display: inline-block;
+  background-color: var(--orangey-red);
+  color: white;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 18px;
+  border-radius: 14px;
+}
+
+.depth2_wrapp .lnb li a {
+}
+/* new item */
+
+.new-items {
+  background: url(/images/bg_news-item.png) 0 0 no-repeat #fff;
+  background-size: 40.3125vw 46.25vw;
+  height: 50vw;
+}
+.new-items_container {
+  position: relative;
+  width: 1444px;
+  margin: 0 auto;
+  display: flex;
+}
+.new-items_header {
+  width: 26.1979166667vw;
+  padding-top: 6.25vw;
+}
+.new-items_title {
+  font-size: 62px;
+  margin-top: 1.0416666667vw;
+  color: var(--red-orange);
+}
+.new-items_more {
+  display: inline-block;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 8.8541666667vw;
+  position: relative;
+}
+.new-items_more:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2.1875vw;
+  top: 0.4166666667vw;
+  width: 1.5625vw;
+  height: 0.4166666667vw;
+  background: url(/images/arrow_right.png) 0 0 no-repeat;
+  background-size: 1.5625vw 0.4166666667vw;
+}
+.new-items_item {
+  display: block;
+}
+.new-items_description {
+  font-size: 23px;
+  line-height: 2.0833333333vw;
+  width: 25vw;
+  color: #1a1a1a;
+  margin-top: 1.5625vw;
+}
+.new-items_list {
+  position: absolute;
+  left: 624px;
+  top: 100px;
+  width: 53.6458333333vw;
+  overflow: hidden;
+}
+
+.new-items_item.swiper-slide-active .new-items_img {
+  min-width: 253px;
+  height: 419px;
+}
+.new-items_item.swiper-slide-active {
+  width: 17.6041666667vw;
+  padding: 0;
+}
+.new-items_item {
+  padding-top: 80px;
+}
+.new-items_subtitle {
+  font-size: 37px;
+  color: var(--red-orange);
+  font-family: "Goldplay";
+  font-weight: 600;
+}
+
+.new-items_name {
+  font-size: 21px;
+  margin-top: 2.3255813953vw;
+  font-weight: 700;
+  color: var(--red-orange);
+}
+.new-items_list-description {
+  font-size: 16.9px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 1.0416666667vw;
+  color: #252525;
+}
+.new-items_subname {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--red-orange);
+}
+.new-items_thumbnail {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.new-items_img {
+  display: block;
+  width: 9.6875vw;
+}
+.new-items_nav-wrapper {
+  position: absolute;
+  left: 624px;
+  top: 100px;
+  width: 53.6458333333vw;
+}
+.new-items_nav_next {
+  background: url(/images/btn_nav_next.png) 0 0 no-repeat;
+  left: 16.1458333333vw;
+  top: 13.75vw;
+}
+.new-items_nav_prev {
+  background: url(/images/btn_nav_prev.png) 0 0 no-repeat;
+  left: -2.0833333333vw;
+  top: 13.75vw;
+}
+.new-items_nav {
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* signature item */
+.signature-item_container {
+  width: 1444px;
+  margin: 0 auto;
+}
+.signature-item {
+  color: var(--red-orange);
+  height: 39.1145833333vw;
+  background: url(/images/bg_signature-item.png) 100% 0 no-repeat #fff;
+  background-size: 57.4479166667vw 39.1145833333vw;
+  padding-top: 8.3333333333vw;
+}
+.signature-item_title {
+  font-family: "Goldplay";
+  font-size: 42px;
+}
+.signature-item_description {
+  font-family: "NanumSquare";
+  font-size: 25px;
+  line-height: 2.0833333333vw;
+  width: 420px;
+  color: #1a1a1a;
+  margin-top: 1.5625vw;
+}
+.signature-item_description-point {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0.2083333333vw;
+}
+.signature-item_description p {
+  margin-bottom: 1.5625vw;
+  line-height: 2.0833333333vw;
+  font-weight: 300;
+}
+.signature-item_button {
+  display: inline-block;
+  font-family: "NanumSquare";
+  font-size: 21px;
+  font-weight: 600;
+  color: #f43b00;
+  border: solid 1px #f43b00;
+  padding: 12.25px 49px;
+  margin-top: 26px;
+}
+.notice_header {
+  position: relative;
+  border-bottom: 5px solid #f0eae8;
+  margin-bottom: 103px;
+  height: 300px;
+}
+.notice_header_title {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  color: var(--red-orange);
+  font-size: 70px;
+  font-weight: 600;
+}

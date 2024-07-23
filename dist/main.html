@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+<link rel="stylesheet" href="../assets/css/sub1.css" />
+<link rel="stylesheet" href="../assets/css/sub2.css" />
+<link rel="stylesheet" href="../assets/css/sub3.css" />
+<link rel="stylesheet" href="../assets/css/media.css" />
+<link rel="stylesheet" href="../assets/css/media1.css" />
+<link rel="stylesheet" href="../assets/css/media2.css" />
+<link rel="stylesheet" href="../assets/css/media3.css" />
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header class="header">
+  <div class="lnb_bg"></div>
+  <div class="header_inn">
+    <a href="/dist/main.html" class="head_img">
+      <img src="/images/logo.svg" alt="house talk" />
+    </a>
+    <ul class="gnb">
+      <li>
+        <a href="" class="header_link">Dal.komm</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="">브랜드 이야기</a></li>
+              <li><a href="">App 소개</a></li>
+              <li><a href="">다날에프엔비 이야기</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">메뉴</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="">메뉴</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">매장</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="">매장찾기</a></li>
+              <li><a href="">글로벌 달콤</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link"
+          ><span>새로운 소식 </span><i class="ico dot"><span>new</span></i></a
+        >
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="">뉴스</a></li>
+              <li><a href="">공지사항</a></li>
+              <li>
+                <a href="">달콤 스토리</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">창업안내</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li>
+                <a href="">가맹점 개설 안내</a>
+              </li>
+              <li><a href="">창업 상담 신청</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href=""><span class="stress">SHOP</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="all_search_input" style="display: none">
+    <input type="search" placeholder="검색어를 입력하세요." />
+    <button type="button" class="header_search_btn cursor-pointer"></button>
+  </div>
+
+  <!-- mobile menu -->
+  <ul class="mo_menu">
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>회사소개</span
+        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/greetings.html">인사말</a></li>
+        <li><a href="/dist/aboutus.html">회사소개</a></li>
+        <li><a href="/dist/keystory.html">주요연혁</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>건축갤러리</span
+        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/scene_live_list.html">현장 live</a></li>
+        <li><a href="/dist/constructionexample_list.html">완공 사례</a></li>
+        <li><a href="/dist/design_list.html">설계 사례</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>주택전시장</span
+        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/showroom_form.html">전시장</a></li>
+        <li><a href="/dist/appforvisit_detail.html">방문신청</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>하우스톡 소식</span
+        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/housetalknews_list.html">하우스톡 소식</a></li>
+        <li><a href="/dist/construct_list.html">건축정보</a></li>
+        <li><a href="/dist/community_interior_tips.html">인테리어Tip</a></li>
+        <li><a href="/dist/construct_story.html">건축주스토리</a></li>
+        <li><a href="">매니저스토리</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>미디어</span
+        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/pressrelease_list.html">언론보도</a></li>
+        <li><a href="">유튜브</a></li>
+        <li><a href="/dist/naver.html">네이버</a></li>
+        <li><a href="/dist/sns.html">SNS</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>상담/신청</span
+        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/constructconsult_list.html">건축 상담</a></li>
+        <li><a href="/dist/appforguidebook_list.html">가이드 북 신청</a></li>
+        <li><a href="/dist/appforas_list.html">AS신청</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+
+    <div class="main_banner">
+  <div class="main_banner_inn">
+    <div class="swiper mainBanner">
+      <div class="swiper-wrapper">
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main.png)"
+        ></a>
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main2.png)"
+        ></a>
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main3.png)"
+        ></a>
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main4.png)"
+        ></a>
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main5.png)"
+        ></a>
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main6.png)"
+        ></a>
+        <a
+          href=""
+          target="_blank"
+          class="swiper-slide main_banner_img"
+          style="background: url(/images/main7.png)"
+        ></a>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div
+        class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+      >
+        <span class="swiper-pagination-bullet" aria-current="true"></span
+        ><span class="swiper-pagination-bullet"></span
+        ><span class="swiper-pagination-bullet"></span
+        ><span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span
+        ><span class="swiper-pagination-bullet"></span
+        ><span class="swiper-pagination-bullet"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main class="main">
+      <!-- new item section -->
+      <section class="new-items">
+        <div class="new-items_container">
+          <div class="new-items_header">
+            <div class="new-items_subtitle">#Strawberry</div>
+            <div class="new-items_title">달콤 신메뉴</div>
+            <div class="new-items_description">
+              커피의 전문성을 부각시키는 컨텐츠와 함께 비쥬얼, 맛, 건강함 그리고
+              마시는 재미까지 함께 선사합니다
+            </div>
+            <a href="/menu" class="new-items_more">View More</a>
+          </div>
+          <!-- new item slider -->
+          <div class="new-items_list swiper-initialized swiper-horizontal">
+            <ul
+              class="new-items_list-container swiper-wrapper"
+              id="swiper-wrapper-958d845c10967104df"
+              aria-live="polite"
+              style="
+                transform: translate3d(-971px, 0px, 0px);
+                transition-duration: 0ms;
+              "
+            >
+              <li
+                class="new-items_item swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="12"
+                role="group"
+                aria-label="13 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img src="/images/juice.png" class="new-items_img" />
+                </div>
+                <div class="new-items_name">피치 큐브 라떼</div>
+                <div class="new-items_subname">Peach Cube Latte</div>
+                <div class="new-items_list-description">
+                  새콤달콤한 복숭아 라떼에 복숭아 큐브를 더해 달콤한 식감까지
+                  느낄 수 있는 피치 큐브
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index="13"
+                role="group"
+                aria-label="14 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice2.png"
+                    class="new-items_img"
+                    alt="망고코코넛 큐브 블렌디드"
+                  />
+                </div>
+                <div class="new-items_name">망고코코넛 큐브 블렌디드</div>
+                <div class="new-items_subname">Mango Coconut Cube Blended</div>
+                <div class="new-items_list-description">
+                  고소한 코코넛 블렌디드에 망고 큐브를 더해 달콤한 식감까지 느낄
+                  수 있는 코코넛 블렌디드 망고 큐브
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide swiper-slide-duplicate swiper-slide-prev"
+                data-swiper-slide-index="14"
+                role="group"
+                aria-label="15 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice3.png"
+                    class="new-items_img"
+                    alt="슈크림 큐브 라떼"
+                  />
+                </div>
+                <div class="new-items_name">슈크림 큐브 라떼</div>
+                <div class="new-items_subname">Chux cream Cube Latte</div>
+                <div class="new-items_list-description">
+                  부드러운 슈크림 라떼에 달콤쌉쌀한 커피큐브를 더해 큐브가
+                  녹을수록 더 달콤하고 진한 맛을 느낄 수 있는 슈크림 큐브 라떼
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide swiper-slide-active"
+                data-swiper-slide-index="0"
+                role="group"
+                aria-label="1 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice4.png"
+                    class="new-items_img"
+                    alt="도라에몽 소다 요거트 블렌디드"
+                  />
+                </div>
+                <div class="new-items_name">도라에몽 소다 요거트 블렌디드</div>
+                <div class="new-items_subname">
+                  Doraemon Soda Yogurt Blended
+                </div>
+                <div class="new-items_list-description">
+                  도라에몽이 떠오르는 색감의 스무디에 체리젤리를 올려 더운 여름
+                  시원하게 즐길 수 있는 도라에몽 소다 요거트 블렌디드
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide swiper-slide-next"
+                data-swiper-slide-index="1"
+                role="group"
+                aria-label="2 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice5.png"
+                    class="new-items_img"
+                    alt="도라미 옐로우 수박 주스"
+                  />
+                </div>
+                <div class="new-items_name">도라미 옐로우 수박 주스</div>
+                <div class="new-items_subname">Dorami Watermelon Juice</div>
+                <div class="new-items_list-description">
+                  도라미가 떠오르는 옐로우 수박을 활용하여 색다르면서 시원하게
+                  즐길 수 있는 도라미 옐로우 수박 주스
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="2"
+                role="group"
+                aria-label="3 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice6.png"
+                    class="new-items_img"
+                    alt="진구 바나나 라떼"
+                  />
+                </div>
+                <div class="new-items_name">진구 바나나 라떼</div>
+                <div class="new-items_subname">Jingu Banana Latte</div>
+                <div class="new-items_list-description">
+                  바나나를 갈아 만든 듯한 바나나 라떼에 치즈크림을 얹어 부드럽게
+                  즐길 수 있는 진구 바나나 라떼
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="3"
+                role="group"
+                aria-label="4 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice7.png"
+                    class="new-items_img"
+                    alt="스트로베리 아사이 에이드"
+                  />
+                </div>
+                <div class="new-items_name">스트로베리 아사이 에이드</div>
+                <div class="new-items_subname">Strawberry Acai Ade</div>
+                <div class="new-items_list-description">
+                  새콤달콤한 에이드에 하트 나타드코코를 넣어 씹히는 재미까지
+                  함께 즐길 수 있는 스트로베리 아사이 에이드
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="4"
+                role="group"
+                aria-label="5 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice8.png"
+                    class="new-items_img"
+                    alt="샤인 모히또 스무디"
+                  />
+                </div>
+                <div class="new-items_name">샤인 모히또 스무디</div>
+                <div class="new-items_subname">Shine Mojito Smoothie</div>
+                <div class="new-items_list-description">
+                  청량한 스무디에 하트 나타드코코를 넣어 씹히는 재미까지 함께
+                  즐길 수 있는 샤인 모히또 스무디
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="5"
+                role="group"
+                aria-label="6 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice9.png"
+                    class="new-items_img"
+                    alt="체리배 스무디"
+                  />
+                </div>
+                <div class="new-items_name">체리배 스무디</div>
+                <div class="new-items_subname">Cherry Pear Smoothie</div>
+                <div class="new-items_list-description">
+                  달콤한 스무디에 하트 나타드코코를 넣어 씹히는 재미까지 함께
+                  즐길 수 있는 체리배 스무디
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="6"
+                role="group"
+                aria-label="7 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice10.png"
+                    class="new-items_img"
+                    alt="전통팥빙수"
+                  />
+                </div>
+                <div class="new-items_name">전통팥빙수</div>
+                <div class="new-items_subname">Tradition Redbean Bingsu</div>
+                <div class="new-items_list-description">
+                  호불호 없는 팥빙수에 다양한 토핑을 얹어 보는 재미, 먹는 재미를
+                  동시에 즐길 수 있는 전통 팥빙수
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="7"
+                role="group"
+                aria-label="8 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice11.png"
+                    class="new-items_img"
+                    alt="망고 봉봉 빙수"
+                  />
+                </div>
+                <div class="new-items_name">망고 봉봉 빙수</div>
+                <div class="new-items_subname">Mango Bongbong Bingsu</div>
+                <div class="new-items_list-description">
+                  망고를 듬뿍 얹은 빙수에 하트 나타드코코를 넣어 씹히는 재미까지
+                  함께 즐길 수 있는 망고 봉봉 빙수
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="8"
+                role="group"
+                aria-label="9 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice12.png"
+                    class="new-items_img"
+                    alt="피치 요거트 빙수"
+                  />
+                </div>
+                <div class="new-items_name">피치 요거트 빙수</div>
+                <div class="new-items_subname">Peach Yogurt Bingsu</div>
+                <div class="new-items_list-description">
+                  복숭아를 듬뿍 얹은 빙수에 수제 요거트 아이스크림을 얹어
+                  새콤달콤하게 즐길 수 있는 피치 요거트 빙수
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="9"
+                role="group"
+                aria-label="10 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice13.png"
+                    class="new-items_img"
+                    alt="콜드브루 버터스카치 슈페너"
+                  />
+                </div>
+                <div class="new-items_name">콜드브루 버터스카치 슈페너</div>
+                <div class="new-items_subname">
+                  Cold blew Butterscotch Spener
+                </div>
+                <div class="new-items_list-description">
+                  달콤한 버터스카치 라떼에 향긋한 콜드브루와 짭짤한 치즈크림을
+                  더해 단짠단짠을 느낄 수 있는 콜드브루 버터스카치 슈페너
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="10"
+                role="group"
+                aria-label="11 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice14.png"
+                    class="new-items_img"
+                    alt="콜드브루 바닐라 블렌디드"
+                  />
+                </div>
+                <div class="new-items_name">콜드브루 바닐라 블렌디드</div>
+                <div class="new-items_subname">Cold blew Vanila Blended</div>
+                <div class="new-items_list-description">
+                  부드럽고 달콤한 바닐라 블렌디드에 향긋한 콜드브루를 더해
+                  시원하게 마실 수 있는 콜드브루 바닐라 블렌디드
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="11"
+                role="group"
+                aria-label="12 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice15.png"
+                    class="new-items_img"
+                    alt="라즈베리 큐브 에이드"
+                  />
+                </div>
+                <div class="new-items_name">라즈베리 큐브 에이드</div>
+                <div class="new-items_subname">Raspberry Cube Ade</div>
+                <div class="new-items_list-description">
+                  상큼한 에이드에 라즈베리 큐브를 더해 새콤한 식감까지 느낄 수
+                  있는 라즈베리 큐브 에이드
+                </div>
+              </li>
+              <li
+                class="new-items_item swiper-slide"
+                data-swiper-slide-index="12"
+                role="group"
+                aria-label="13 / 15"
+                style="width: 253.667px; margin-right: 70px"
+              >
+                <div class="new-items_thumbnail">
+                  <img
+                    src="/images/juice16.png"
+                    class="new-items_img"
+                    alt="피치 큐브 라떼"
+                  />
+                </div>
+                <div class="new-items_name">피치 큐브 라떼</div>
+                <div class="new-items_subname">Peach Cube Latte</div>
+                <div class="new-items_list-description">
+                  새콤달콤한 복숭아 라떼에 복숭아 큐브를 더해 달콤한 식감까지
+                  느낄 수 있는 피치 큐브
+                </div>
+              </li>
+            </ul>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <!-- new item btn list -->
+          <div class="new-items_nav-wrapper">
+            <div
+              class="new-items_nav_next new-items_nav"
+              tabindex="0"
+              role="button"
+              aria-label="Next slide"
+              aria-controls="swiper-wrapper-102480bc6bc0685dd"
+            ></div>
+            <div
+              class="new-items_nav_prev new-items_nav"
+              tabindex="0"
+              role="button"
+              aria-label="Previous slide"
+              aria-controls="swiper-wrapper-102480bc6bc0685dd"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- signature section -->
+      <section class="section signature-item">
+        <div class="signature-item_container">
+          <div class="signature-item_information">
+            <div class="signature-item_title">Portion Coffee</div>
+            <div class="signature-item_description">
+              <p>
+                <span class="signature-item_description-point"
+                  >시그니처 블랙 포션커피는</span
+                >
+                달콤의 시그니처 블렌딩을 포션에 담아 언제 어디서나 쉽고 빠르게
+                즐길수 있는 데일리 포션커피입니다.
+              </p>
+              <p>
+                HOT/ICE 구분없이 홈카페, 사무실, 트레킹 등 커피가 필요한
+                곳이라면 함께 즐겨보세요!
+              </p>
+            </div>
+            <a href="" class="signature-item_button">구매하러 가기</a>
+          </div>
+        </div>
+      </section>
+      <!-- notice section -->
+      <section class="section notice">
+        <div class="notice_header">
+          <h2 class="notice_header_title">Notice</h2>
+        </div>
+        <div class="notice_contents">
+          <ul class="notice_items">
+            <li class="noticeitem">
+              <a
+                href="javascript:void(0);"
+                seq="304"
+                cate="STORE"
+                class="item dal-contents itemStory"
+              >
+                <img
+                  src="/attach_files/bbs/data_1_20240715111816.png"
+                  alt="축! 당첨! 당신은 70% 할인에 당첨되셨습니다! "
+                  class="noticet_humbnail"
+                />
+                <div class="notice_tag">STORE</div>
+                <div class="notice_subject ellipsis">
+                  축! 당첨! 당신은 70% 할인에 당첨되셨습니다!
+                </div>
+                <div class="notice_content ellipsis">스마트스토어 페스타</div>
+              </a>
+            </li>
+            <li class="noticeitem">
+              <a
+                href="javascript:void(0);"
+                seq="300"
+                cate="EVENT"
+                class="item dal-contents itemStory"
+              >
+                <img
+                  src="/attach_files/bbs/data_1_20240711090830.png"
+                  alt="도라에몽과 함께하는 Summer Vacation! "
+                  class="noticet_humbnail"
+                />
+                <div class="notice_tag">EVENT</div>
+                <div class="notice_subject ellipsis">
+                  도라에몽과 함께하는 Summer Vacation!
+                </div>
+                <div class="notice_content ellipsis">
+                  달콤하고 시원한 신메뉴와 귀여운 굿즈 놓치지마세요✪ ω ✪
+                </div>
+              </a>
+            </li>
+            <li class="notice_item">
+              <a
+                href="javascript:void(0);"
+                seq="295"
+                cate="STORY"
+                class="item dal-contents itemStory"
+              >
+                <img
+                  src="/attach_files/bbs/data_1_20240614161652.png"
+                  alt="Music Playlist by DJ Dal.K♬"
+                  class="noticet_humbnail"
+                />
+                <div class="notice_tag">STORY</div>
+                <div class="notice_subject ellipsis">
+                  Music Playlist by DJ Dal.K♬
+                </div>
+                <div class="notice_content ellipsis">
+                  초여름의 기분좋은 선선함
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
