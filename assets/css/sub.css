@@ -10,5 +10,61 @@ html {
 body {
   overflow-x: hidden;
 }
+.brand_story_item {
+  padding: 180px 0 160px;
+}
+.brand_story .img-wrap {
+  margin: 0 auto;
+  width: 905px;
+}
+.section_title {
+  margin-top: 96px;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+.brand_story .brand_story_cont {
+  font-size: 18px;
+  margin-top: 32px;
+  text-align: center;
+}
+.brand_story .btn_area {
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+}
+.brand_story .btn {
+  border: 1px solid var(--orangey-red);
+  color: var(--orangey-red);
+  text-align: center;
+  padding: 15px 82px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.brand_story .btn:hover {
+  color: var(--bs-white);
+  background: var(--orangey-red);
+}
+.brand_story .flex-list {
+  display: grid;
 
-
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.brand_story .flex-list .img-wrap {
+  width: 100%;
+}
+.brand_story .flex-list .img-wrap img {
+  display: block;
+  width: 100%;
+}
+.character_imgs .img-wrap {
+  width: 100%;
+}
+.character_imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.text-wrap {
+  padding-top: 79px;
+}
