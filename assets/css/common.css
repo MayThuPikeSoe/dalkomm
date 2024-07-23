@@ -3,7 +3,6 @@
     File definition: Common css
     Order:    Header > table > list > input > select box, radiobutton, checkbox > Footer 
 -------------------------------------------------------------------*/
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -11,6 +10,28 @@
   height: 100%;
 }
 
+/* line clamp */
+.line_clamp_1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.line_clamp_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.line_clamp_3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 /* MAIN BANNER SWIPER */
 .swiper {
   width: 100%;
@@ -50,9 +71,96 @@ img {
   cursor: pointer;
 }
 
+/* mobile menu */
+.hamburger {
+  display: none;
+  position: sticky;
+  top: 20px;
+  right: 20px;
+  height: 28px;
+  margin-left: 15px;
+  -webkit-transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  border: none;
+  background: none;
+  outline: none;
+  z-index: 10000;
+  text-indent: -999999px;
+}
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background-color: var(--bs-black);
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger.active span:nth-child(1) {
+  -webkit-transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mo_menu {
+  position: fixed;
+  background: var(--bs-white);
+  height: auto;
+  width: 100%;
+  display: none;
+  transition: top 0.3s ease, opacity 3s ease;
+  top: -100%;
+  padding: 30px 0;
+  opacity: 0;
+  box-shadow: 0px 11px 34px 0px rgb(0 0 0 / 10%);
+}
+.mo_menu .depth1 > a span {
+  display: block;
+  float: left;
+  padding: 10px 30px;
+  width: auto;
+  color: var(--bs-black);
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.mo_menu .mo_list {
+  position: relative;
+}
+.mo_menu .mo_list img {
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  object-fit: contain;
+  transform: rotate(-90deg);
+}
+.mo_menu .mo_list .mo_snb {
+  display: none;
+}
+.mo_menu .mo_snb a {
+  color: var(--bs-black);
+  padding: 5px 50px;
+  display: block;
+}
+.mo_menu .mo_list.open img {
+  transform: rotate(-180deg);
+}
+.mo_menu .depth1 > a {
+  display: flex;
+  align-items: center;
+}
+.mo_menu.active {
+  display: block;
+  top: 80px;
+  opacity: 1;
+}
 /* header start */
 .header {
-  width: 100%;
   height: 100px;
   background: rgba(225, 225, 225, 1);
   border-bottom: 1px solid #dedede;
@@ -139,6 +247,7 @@ img {
 .header .depth2 {
   margin-top: 36px;
   opacity: 0;
+  padding: 40px 44px;
   pointer-events: none;
 }
 .lnb_bg {

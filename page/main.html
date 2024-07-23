@@ -35,10 +35,10 @@
     </script>
   </head>
   <body>
-    ${require('./include/_header.html')}
+    <!-- ${require('./include/_header.html')} -->
     ${require('./include/_mainBanner.html')}
     <main class="main">
-      <!-- new item section -->
+      <!---------------------- new item section ----------------------->
       <section class="new-items">
         <div class="new-items_container">
           <div class="new-items_header">
@@ -423,12 +423,20 @@
           </div>
         </div>
       </section>
-      <!-- signature section -->
-      <section class="section signature-item">
+      <!-------------- signature section ------------------------------>
+      <section class="signature-item">
         <div class="signature-item_container">
           <div class="signature-item_information">
-            <div class="signature-item_title">Portion Coffee</div>
-            <div class="signature-item_description">
+            <div
+              class="signature-item_title aos-init aos-animate"
+              data-aos="fade-right"
+            >
+              Portion Coffee
+            </div>
+            <div
+              class="signature-item_description aos-init aos-animate"
+              data-aos="fade-left"
+            >
               <p>
                 <span class="signature-item_description-point"
                   >시그니처 블랙 포션커피는</span
@@ -441,81 +449,220 @@
                 곳이라면 함께 즐겨보세요!
               </p>
             </div>
-            <a href="" class="signature-item_button">구매하러 가기</a>
+            <a
+              href=""
+              class="signature-item_button aos-init aos-animate"
+              data-aos="fade-down"
+              >구매하러 가기</a
+            >
           </div>
         </div>
       </section>
-      <!-- notice section -->
-      <section class="section notice">
+      <!------------------------ notice section ------------------------->
+      <section class="container notice">
         <div class="notice_header">
           <h2 class="notice_header_title">Notice</h2>
         </div>
-        <div class="notice_contents">
-          <ul class="notice_items">
-            <li class="noticeitem">
-              <a
-                href="javascript:void(0);"
-                seq="304"
-                cate="STORE"
-                class="item dal-contents itemStory"
-              >
-                <img
-                  src="/attach_files/bbs/data_1_20240715111816.png"
-                  alt="축! 당첨! 당신은 70% 할인에 당첨되셨습니다! "
-                  class="noticet_humbnail"
-                />
-                <div class="notice_tag">STORE</div>
-                <div class="notice_subject ellipsis">
-                  축! 당첨! 당신은 70% 할인에 당첨되셨습니다!
-                </div>
-                <div class="notice_content ellipsis">스마트스토어 페스타</div>
-              </a>
-            </li>
-            <li class="noticeitem">
-              <a
-                href="javascript:void(0);"
-                seq="300"
-                cate="EVENT"
-                class="item dal-contents itemStory"
-              >
-                <img
-                  src="/attach_files/bbs/data_1_20240711090830.png"
-                  alt="도라에몽과 함께하는 Summer Vacation! "
-                  class="noticet_humbnail"
-                />
-                <div class="notice_tag">EVENT</div>
-                <div class="notice_subject ellipsis">
-                  도라에몽과 함께하는 Summer Vacation!
-                </div>
-                <div class="notice_content ellipsis">
-                  달콤하고 시원한 신메뉴와 귀여운 굿즈 놓치지마세요✪ ω ✪
-                </div>
-              </a>
-            </li>
-            <li class="notice_item">
-              <a
-                href="javascript:void(0);"
-                seq="295"
-                cate="STORY"
-                class="item dal-contents itemStory"
-              >
-                <img
-                  src="/attach_files/bbs/data_1_20240614161652.png"
-                  alt="Music Playlist by DJ Dal.K♬"
-                  class="noticet_humbnail"
-                />
-                <div class="notice_tag">STORY</div>
-                <div class="notice_subject ellipsis">
-                  Music Playlist by DJ Dal.K♬
-                </div>
-                <div class="notice_content ellipsis">
-                  초여름의 기분좋은 선선함
-                </div>
-              </a>
-            </li>
-          </ul>
+        <div class="notice_contents aos-init aos-animate" data-aos="fade-down">
+          <div class="notice_items">
+            <a href="" class="item">
+              <img
+                src="/images/notice.png"
+                alt="축! 당첨! 당신은 70% 할인에 당첨되셨습니다! "
+                class="noticet_humbnail"
+              />
+              <div class="notice_tag">STORE</div>
+              <div class="notice_subject line_clamp_1">
+                축! 당첨! 당신은 70% 할인에 당첨되셨습니다!
+              </div>
+              <div class="notice_content line_clamp_1">스마트스토어 페스타</div>
+            </a>
+            <a href="" class="item">
+              <img
+                src="/images/main2.png"
+                alt="도라에몽과 함께하는 Summer Vacation! "
+                class="noticet_humbnail"
+              />
+              <div class="notice_tag">EVENT</div>
+              <div class="notice_subject line_clamp_1">
+                도라에몽과 함께하는 Summer Vacation!
+              </div>
+              <div class="notice_content line_clamp_1">
+                달콤하고 시원한 신메뉴와 귀여운 굿즈 놓치지마세요✪ ω ✪
+              </div>
+            </a>
+            <a href="" class="item">
+              <img
+                src="/images/notice2.png"
+                alt="Music Playlist by DJ Dal.K♬"
+                class="noticet_humbnail"
+              />
+              <div class="notice_tag">STORY</div>
+              <div class="notice_subject line_clamp_1">
+                Music Playlist by DJ Dal.K♬
+              </div>
+              <div class="notice_content line_clamp_1">
+                초여름의 기분좋은 선선함
+              </div>
+            </a>
+          </div>
         </div>
       </section>
+      <!------------------------- supporter section ----------------- -->
+      <section class="supporter">
+        <div class="supporter_container">
+          <div class="supporter_title aos-init aos-animate" data-aos="fade-up">
+            카페 창업의 꿈, <br />
+            달콤이 서포터즈가 되겠습니다
+          </div>
+          <div
+            class="supporter_description aos-init aos-animate"
+            data-aos="fade-up"
+          >
+            달콤은 파트너 여러분들의 다양한 창업 조건에 맞는 '맞춤형 점포
+            개설'을 통해 카페 창업의 문턱을 낮추고 진정한 상생의 가치를
+            구현합니다.
+          </div>
+          <a href="" class="supporter_button">가맹점 개설 안내</a>
+        </div>
+      </section>
+      <!------------------------------marginal section ------------ -->
+      <section class="section marginal">
+        <div class="marginal_background"></div>
+        <div class="marginal_background marginal_background_right"></div>
+        <div class="marginal_container">
+          <div
+            class="marginal_item marginal_item_left aos-init aos-animate"
+            data-aos="fade-up"
+          >
+            <div
+              class="marginal_title aos-init aos-animate"
+              data-aos="fade"
+              data-aos-easing="ease-out-sine"
+              data-aos-duration="800"
+            >
+              테이블 오더
+            </div>
+            <div
+              class="marginal_message aos-init aos-animate"
+              data-aos="fade"
+              data-aos-easing="ease-out-sine"
+              data-aos-duration="800"
+            >
+              달콤 앱 고객님을 위한 다양한 해택을 만나보세요
+            </div>
+            <a href="/appIntro" class="marginal_button">View more</a>
+          </div>
+          <div class="marginal_item marginal_item_right">
+            <div
+              class="marginal_title aos-init aos-animate"
+              data-aos="fade"
+              data-aos-easing="ease-out-sine"
+              data-aos-duration="800"
+            >
+              매장찾기
+            </div>
+            <div
+              class="marginal_message aos-init aos-animate"
+              data-aos="fade"
+              data-aos-easing="ease-out-sine"
+              data-aos-duration="800"
+            >
+              내주변 가까운 달콤 매장을 찾아보세요!
+            </div>
+            <div class="marginal_finder">
+              <form method="get">
+                <input class="marginal_finder_input" placeholder="Search" />
+
+                <button type="submit" class="marginal_finder_submit">
+                  <img src="/images/icon_zoom.png" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------------- footer ------------------>
+      <footer id="footer" class="footer">
+        <div class="footer_wrap">
+          <img src="/images/logo.svg" class="logo" />
+
+          <div class="footer_items">
+            <div class="footer_item">
+              <strong>고객을 위한 달콤</strong><br />
+              <a href="" class="contact_link">문의하기 (Contact Us)</a> <br />
+              <a href="" class="link">고객상담센터 1661-1399</a>
+            </div>
+            <div class="footer_item">
+              <strong>파트너를 위한 달콤</strong><br />
+              <a href="" class="link">협력업체 문의</a> <br />
+              <a href="" class="link">가맹 문의</a> <br />
+              <a href="" class="link">제휴·마케팅 문의</a> <br />
+              <a href="" class="link">브랜드 소개서</a>
+            </div>
+
+            <div class="footer_item">
+              <strong>개인정보 보호 및 약관</strong><br />
+              <a href="" class="link">개인정보 처리방침</a> <br />
+            </div>
+          </div>
+        </div>
+        <div class="max-wrap flex-both-top">
+          <div class="select-wrap">
+            <select title="FAMILY SITE" class="select family">
+              <option value="http://www.dalkomm.com/">FAMILY SITE</option>
+              <option value="https://danal.co.kr/">다날</option>
+              <option value="https://www.danalpay.com/main/main.aspx">
+                다날페이먼트
+              </option>
+              <option value="http://www.danalenter.co.kr/index.do">
+                다날엔터테인먼트
+              </option>
+              <option value="https://www.beatcorp.io/pc">비트코퍼레이션</option>
+              <option value="http://www.danalfintech.com/">다날핀테크</option>
+              <option value="http://www.danal.jp/">다날 재팬</option>
+              <option value="https://www.flexpay.co.kr/">플렉스페이</option>
+              <option value="http://www.ssocioliving.com/default/">
+                쏘시오리빙
+              </option>
+              <option value="http://www.bartong.co.kr/pages/">바통</option>
+              <option value="https://befamily.co.kr/">비밀리</option>
+              <option value="https://www.wannai.co.kr/">워너아이</option>
+              <option value="https://payprotocol.io/">페이프로토콜</option>
+            </select>
+          </div>
+          <div class="copyright-wrap">
+            <p class="copyright">
+              <a href="" class="">주)다날에프엔비 +</a>
+              <span class="only-pc"> | </span>주소지 : 경기도 성남시 분당구
+              황새울로312번길 5, 5층(서현동, 세광빌딩)
+              <br />
+              대표이사 : 심순열<span> | </span> 사업자등록번호 : 144-81-09353<br
+                class="only-mo"
+              /><span class="only-pc"> | </span>통신판매업신고 : 제
+              2016-성남분당-0680 호<br />
+              Copyright ⓒ 2022 (주)달콤 All Rights Reserved.
+            </p>
+            <div class="playstore">
+              <a
+                class="btn_apple"
+                target="_blank"
+                href="https://apps.apple.com/kr/app/%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC/id1097036744"
+                ><i class="ico apple"></i> App Store</a
+              >
+              <a
+                class="btn_google"
+                target="_blank"
+                href="https://play.google.com/store/search?q=%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC&amp;c=apps"
+                ><i class="ico google"></i>Google Play</a
+              >
+              <a class="qr" href="/appIntro">
+                <img src="/images/QRCode.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

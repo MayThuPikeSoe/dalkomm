@@ -5,14 +5,20 @@
     Order: header > main > sub pages > footer
 -------------------------------------------------------------------*/
 
-@media screen and (max-width: 1663.98px) {
- 
-}
 @media screen and (max-width: 1470.98px) {
   .header .gnb {
     gap: 30px;
   }
 }
+/* @media screen and (max-width: 1444px) {
+  .new-items_header {
+    padding-left: 20px;
+    width: 26.1979166667vw;
+  }
+  .new-items_container {
+    width: auto;
+  }
+} */
 @media screen and (max-width: 1300.98px) {
   .header .gnb a {
     font-size: 16px;
@@ -29,9 +35,21 @@
     margin-right: 10px;
   }
 
-  .main_sec_05_conts .sec_05_img {
-    min-width: 500px;
+  .new-items_list {
+    left: 44%;
+    top: 2%;
   }
+  .new-items_nav_prev {
+    left: -16%;
+  }
+  .new-items_nav_next {
+    left: 22%;
+  }
+  /* notice */
+  .notice_items {
+   height: auto;
+   gap: 0;
+}
   .footer .foot_info_wrpp {
     flex-wrap: wrap;
     gap: 20px;
@@ -49,6 +67,75 @@
   }
   .header .gnb {
     display: none;
+  }
+  /* new items */
+  .new-items {
+    background-size: 100vw 70.2325581395vw;
+    height: 168.1395348837vw;
+  }
+
+  .new-items_container {
+    width: 100%;
+    padding-left: 15.6976744186vw;
+    flex-direction: column;
+  }
+  .new-items_header {
+    width: 100%;
+    display: block;
+    padding-top: 60px;
+  }
+  .new-items_container {
+    display: block;
+    width: 100%;
+  }
+  .new-items_list {
+    width: calc(100% - 6.97vw);
+    left: 6.97vw;
+    top: 75.35vw;
+  }
+  .new-items_nav_prev {
+    left: -1.16vw;
+    top: 21.4vw;
+  }
+
+  .new-items_nav_next {
+    left: 30.2325581395vw;
+    top: 21.3953488372vw;
+  }
+  .new-items_nav-wrapper {
+    width: calc(100% - 6.976744186vw);
+    left: 6.976744186vw;
+    top: 75.3488372093vw;
+  }
+  .new-items_item.swiper-slide-active .new-items_img {
+    width: 23.7209302326vw;
+  }
+  .new-items_img {
+    width: 13.2790697674vw;
+  }
+  .new-items_description {
+    font-size: 30px;
+    width: 535px;
+    line-height: 37px;
+  }
+  .new-items_subname {
+    font-size: 21px;
+  }
+  .new-items_name {
+    font-size: 23px;
+    margin-top: 20px;
+    font-weight: 900;
+  }
+  .new-items_list-description {
+    font-size: 23px;
+    line-height: 37px;
+  }
+  .new-items_more:after {
+    right: -4.88vw;
+    top: 0.9vw;
+    width: 3.5vw;
+    height: 1vw;
+    background-size: 3.5vw 0.9vw;
   }
 }
 @media screen and (max-width: 767.98px) {
