@@ -15,7 +15,7 @@ body {
 }
 .brand_story .img-wrap {
   margin: 0 auto;
-  width: 905px;
+  max-width: 905px;
 }
 .pc_hidden {
   display: block;
@@ -107,9 +107,12 @@ body {
   margin-top: 20px;
   line-height: 30px;
 }
-.brand_story dt {
+.brand_story dl dt {
   font-weight: 800;
+  min-width: 45px;
+  padding-right: 12px;
 }
+
 .title {
   font-size: 20px;
   font-weight: bold;
