@@ -68,3 +68,22 @@ body {
 .text-wrap {
   padding-top: 79px;
 }
+.brand_story .flex {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.brand_story dt {
+  font-weight: 800;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.title img {
+  height: 47px;
+  width: 123px;
+  margin-right: 20px;
+}
