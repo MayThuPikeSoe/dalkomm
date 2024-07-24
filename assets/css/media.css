@@ -58,6 +58,10 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+  .header .header_inn {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 1000.98px) {
   .pc_hidden {
@@ -66,6 +70,7 @@
   .mobile_hidden {
     display: block;
   }
+
   .header {
     height: 80px;
   }

@@ -176,6 +176,8 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  gap: 50px;
+  padding: 0 20px;
   padding: 0 20px;
 }
 
@@ -187,7 +189,6 @@ img {
 .header .gnb {
   display: flex;
   height: 100%;
-  width: 70%;
   align-items: center;
   gap: 80px;
 }
@@ -206,7 +207,6 @@ img {
 }
 .header .gnb .header_link {
   position: relative;
-  height: 120px;
 
   line-height: 120px;
   font-weight: 500;
@@ -220,14 +220,14 @@ img {
   position: absolute;
   right: 6px;
   bottom: 10%;
-  opacity: 0;
+  width: 0;
   left: 6px;
   height: 3px;
   background: var(--orangey-red);
   transition: all 0.5s ease-in-out;
 }
 .header .gnb .header_link:hover::before {
-  opacity: 1;
+  width: 100%;
 }
 .header .gnb a.header_link:hover:before .header .lnb {
   margin-top: 36px;
