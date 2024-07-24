@@ -187,6 +187,7 @@ img {
 .header .gnb {
   display: flex;
   height: 100%;
+  width: 70%;
   align-items: center;
   gap: 80px;
 }
@@ -206,8 +207,8 @@ img {
 .header .gnb .header_link {
   position: relative;
   height: 120px;
+
   line-height: 120px;
-  padding: 0 40px;
   font-weight: 500;
 }
 .header .gnb a:hover {
@@ -217,10 +218,10 @@ img {
   content: " ";
   display: block;
   position: absolute;
-  right: 44px;
-  bottom: 0;
+  right: 6px;
+  bottom: 10%;
   opacity: 0;
-  left: 44px;
+  left: 6px;
   height: 3px;
   background: var(--orangey-red);
   transition: all 0.5s ease-in-out;
@@ -247,7 +248,6 @@ img {
 .header .depth2 {
   margin-top: 36px;
   opacity: 0;
-  padding: 40px 44px;
   pointer-events: none;
 }
 .lnb_bg {

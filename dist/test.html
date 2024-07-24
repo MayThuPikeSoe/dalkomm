@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f8f8;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 1200px;
+        width: 100%;
+        padding: 20px;
+      }
+      .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .card:nth-child(odd) {
+        grid-template-columns: 1fr 1fr;
+        direction: rtl; /* Change the reading direction for odd cards */
+      }
+      .text {
+        direction: ltr; /* Change the text direction back to normal */
+        margin: 0 20px;
+      }
+      .text h2 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #ff6f61;
+      }
+      .text p {
+        margin: 10px 0 0;
+        font-size: 1em;
+        color: #333;
+      }
+      .image {
+        text-align: center;
+      }
+      .image img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="text">
+          <h2>SPECIAL BEVERAGE</h2>
+          <p>
+            계절감이 반영된 에이드, 스무디, 티베리에이션으로 비주얼, 맛, 건강함,
+            그리고 마시는 재미까지 함께 선사합니다.
+          </p>
+        </div>
+        <div class="image">
+          <img src="beverage.png" alt="Special Beverage" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="text">
+          <h2>BAKERY & FOOD</h2>
+          <p>
+            엄격한 심사를 통해 선별된 원료와 제조과정을 거쳐 작은 빵 한 조각에도
+            정성과 감동을 담아 최고의 베이커리와 푸드를 제공합니다.
+          </p>
+        </div>
+        <div class="image">
+          <img src="bakery.png" alt="Bakery and Food" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="text">
+          <h2>GOODS</h2>
+          <p>
+            달콤의 위트있는 브랜드 굿즈와 PB상품들은 온라인 스토어, 오프라인
+            매장 어디서나 여러분의 취향을 저격합니다.
+          </p>
+        </div>
+        <div class="image">
+          <img src="goods.png" alt="Goods" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
