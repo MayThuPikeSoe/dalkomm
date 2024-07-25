@@ -446,10 +446,7 @@
   margin-top: 12px;
 }
 /* footer */
-footer {
-  padding: 120px 0;
- 
-}
+
 .footer_wrap {
   display: flex;
   justify-content: space-between;
@@ -457,14 +454,65 @@ footer {
 footer .logo {
   width: 192px;
 }
-footer ul {
-  width: 73.6%;
+footer .footer_ul {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+footer a {
+  position: relative;
+}
+footer a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: var(--black);
+  transform: scaleX(0);
+  transform-origin: top right;
+  transition: transform 500ms ease-in-out;
+}
+footer .em {
+  color: var(--orangey-red);
+}
+footer .mo {
+  display: none;
+}
+footer .footer_ul_cont {
+  margin-top: 20px;
+}
+footer li {
+  margin-top: 16px;
+}
+footer strong {
+  font-size: 18px;
+  font-weight: bold;
 }
 footer .footer_items {
   display: flex;
   width: 73%;
-  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border: 0 none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+
+  box-sizing: border-box;
+}
+footer .ico {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 footer .link {
   transition: all 0.5s;
@@ -556,4 +604,11 @@ footer .ico.apple {
   background-image: url(/images/apple.svg);
   width: 26px;
   height: 26px;
+  margin-right: 10px;
+}
+footer .ico.google {
+  background-image: url(/images/google.svg);
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
 }

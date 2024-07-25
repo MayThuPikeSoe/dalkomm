@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div class="startup container">
+      <div class="common_heading_hover">
+        <ul class="common_heading_hover_tabs">
+          <li>
+            <a href="/franchisee" class="common_heading_hover_link"
+              >가맹점 개설 안내</a
+            >
+          </li>
+          <li class="current">
+            <a
+              href="/dist/startup.html"
+              class="common_heading_hover_link common_heading_hover_link_active"
+              >창업 상담 신청</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="startup_cont">
+        <div class="startup_title">
+          <h3>지역별 담당자 정보</h3>
+        </div>
+        <div class="startup_flex">
+          <div class="startup_search_list pc_hidden">
+            <div class="startup_search_list_item">
+              <button class="startup_btn">서울/인천</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">경기</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">강원</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">대전</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">세종</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">광주</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">충청</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">전라</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">부산</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">대구</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">울산</button>
+            </div>
+            <div class="startup_search_list_item">
+              <button class="startup_btn">경상</button>
+            </div>
+          </div>
+          <div class="startup_search_list mobile_hidden">
+            <div class="custom-select">
+              <select>
+                <option value="option1" selected>시/도</option>
+
+                <option value="option1">서울/인천</option>
+                <option value="option2">경기</option>
+                <option value="option3">강원</option>
+                <option value="option3">대전</option>
+                <option value="option3">세종</option>
+                <option value="option3">광주</option>
+                <option value="option3">충청</option>
+                <option value="option3">전라</option>
+                <option value="option3">부산</option>
+                <option value="option3">대구</option>
+                <option value="option3">울산</option>
+                <option value="option3">경상</option>
+              </select>
+            </div>
+          </div>
+          <div class="startup_card">
+            <img src="/images/dalkomm_org.svg" alt="" />
+            <div class="startup_card_title">
+              <strong>달콤커피 가맹문의</strong>
+            </div>
+            <p class="contact">
+              1661-1399 <br />(내선번호 2번)<br />
+              ksc@dalkomm.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    ${require('./include/_footer.html')}
+    <script>
+      let startupBtn = document.querySelectorAll(".startup_btn");
+      startupBtn.forEach((btn) => {
+        btn.onclick = function () {
+          startupBtn.forEach((b) => b.classList.remove("active"));
+          btn.classList.toggle("active");
+        };
+      });
+    </script>
+  </body>
+</html>

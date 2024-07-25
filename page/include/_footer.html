@@ -1,28 +1,78 @@
 <footer id="footer" class="footer container">
-  <div class="footer_wrap container">
+  <div class="footer_wrap">
     <img src="/images/logo.svg" class="logo" />
 
-    <div class="footer_items">
+    <ul class="footer_ul dropdown">
+      <li class="dropdown-header">
+        <strong
+          >고객을 위한 달콤<a href="#forC" class="btn more"
+            ><i class="ico1 acc-arr"></i></a
+        ></strong>
+        <ul class="dropdown-content">
+          <li><a href="/customerCS" class="em">문의하기 (Contact Us)</a></li>
+          <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+        <strong
+          >파트너를 위한 달콤<a href="#forP" class="btn more"
+            ><i class="ico1 acc-arr"></i></a
+        ></strong>
+        <ul class="dropdown-content">
+          <li><a href="/partnerCS">협력업체 문의</a></li>
+          <li><a href="/franchiseeCS">가맹 문의</a></li>
+          <li><a href="/marketingCS">제휴·마케팅 문의</a></li>
+          <li>
+            <a href="/@resource/dalkomm_introduce_v20240612.pdf" target="_blank"
+              >브랜드 소개서</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+        <strong
+          >개인정보 보호 및 약관<a href="#forT" class="btn more"
+            ><i class="ico1 acc-arr"></i></a
+        ></strong>
+        <ul class="dropdown-content">
+          <li><a href="/privacy">개인정보 처리방침</a></li>
+          <li><a href="/serviceTerms">서비스 이용약관</a></li>
+          <li><a href="/locationTerms">위치기반서비스 이용약관</a></li>
+          <li><a href="/videoTerms">영상정보 처리기기 운영관리 방침</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- <div class="footer_items">
       <div class="footer_item">
-        <strong>고객을 위한 달콤</strong><br />
+        <div class="footer_link">
+          <strong
+            >고객을 위한 달콤
+            <a href="#forC" class="btn more"><i class="ico"></i></a>
+          </strong>
+        </div>
+        <br />
         <a href="" class="contact_link">문의하기 (Contact Us)</a> <br />
         <a href="" class="link">고객상담센터 1661-1399</a>
       </div>
       <div class="footer_item">
-        <strong>파트너를 위한 달콤</strong><br />
-        <a href="" class="link">협력업체 문의</a> <br />
-        <a href="" class="link">가맹 문의</a> <br />
-        <a href="" class="link">제휴·마케팅 문의</a> <br />
-        <a href="" class="link">브랜드 소개서</a>
+        <div class="footer_link">
+          <strong
+            >파트너를 위한 달콤 <a href="" class="link">협력업체 문의</a> <br />
+            <a href="" class="link">가맹 문의</a> <br />
+            <a href="" class="link">제휴·마케팅 문의</a> <br />
+            <a href="" class="link">브랜드 소개서</a>
+          </strong>
+        </div>
       </div>
 
       <div class="footer_item">
         <strong>개인정보 보호 및 약관</strong><br />
         <a href="" class="link">개인정보 처리방침</a> <br />
       </div>
-    </div>
+    </div> -->
   </div>
-  <div class="max-wrap flex-both-top container">
+  <div class="max-wrap flex-both-top">
     <div class="select-wrap">
       <select title="FAMILY SITE" class="select family">
         <option value="http://www.dalkomm.com/">FAMILY SITE</option>
@@ -46,7 +96,7 @@
     </div>
     <div class="copyright-wrap">
       <p class="copyright">
-        <a href="" class="">주)다날에프엔비 +</a>
+        <a href="" class="">주)다날에프엔비 + <br class="mo" /></a>
         <span class="only-pc"> | </span>주소지 : 경기도 성남시 분당구
         황새울로312번길 5, 5층(서현동, 세광빌딩)
         <br />
@@ -75,4 +125,12 @@
       </div>
     </div>
   </div>
+  <script>
+    document.querySelectorAll(".btn").forEach((header) => {
+      header.addEventListener("click", function () {
+        this.parentElement.classList.toggle("active");
+        console.log("click");
+      });
+    });
+  </script>
 </footer>

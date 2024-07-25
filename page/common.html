@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div class="common_heading_hover">
+      <ul class="common_heading_hover_tabs">
+        <li>
+          <a href="/news" class="common_heading_hover_link">뉴스</a>
+        </li>
+        <li class="current">
+          <a
+            href="/dist/common_heading_hover.html"
+            class="common_heading_hover_link common_heading_hover_link_active"
+            >공지사항</a
+          >
+        </li>
+        <li>
+          <a href="/story" class="common_heading_hover_link">달콤 스토리</a>
+        </li>
+      </ul>
+    </div>
+    ${require('./include/_footer.html')}
+  </body>
+</html>

@@ -197,13 +197,8 @@ img {
   position: relative;
 }
 .header .gnb a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: -0.48px;
 }
 .header .gnb .header_link {
   position: relative;
@@ -219,7 +214,7 @@ img {
   display: block;
   position: absolute;
   right: 6px;
-  bottom: 10%;
+  bottom: -70%;
   width: 0;
   left: 6px;
   height: 3px;
@@ -228,6 +223,9 @@ img {
 }
 .header .gnb .header_link:hover::before {
   width: 100%;
+}
+.header .shop_btn {
+  line-height: 120px;
 }
 .header .gnb a.header_link:hover:before .header .lnb {
   margin-top: 36px;
@@ -477,7 +475,7 @@ img {
 .pc_hidden {
   display: none;
 }
-
+/* custom select */
 .custom-select select {
   display: block;
   width: 100%;
@@ -490,11 +488,11 @@ img {
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #f6f6f6;
+  background: var(--bs-white);
   outline-color: var(--bs-dark);
 }
 .custom-select {
-  width: 188px;
+  width: 100%;
   /* height: 60px; */
   position: relative;
 }
@@ -502,7 +500,7 @@ img {
   content: "";
   position: absolute;
   top: 40%;
-  right: 10%;
+  right: 8%;
   transform: translateY(-50%) rotate(-45deg);
   transition: 0.2s;
   z-index: 90;
@@ -520,4 +518,113 @@ img {
 }
 .custom-select.active::after {
   transform: rotate(-225deg);
+}
+
+/* pagination start */
+.pagination_box {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 72px 0px 58px 0px;
+}
+
+.pagination_box img {
+  width: 16px;
+  height: 10px;
+}
+.pagination_box .img_box_cont:hover {
+  cursor: pointer;
+}
+.pagination_box .img_box_cont {
+  display: flex;
+  gap: 8px;
+}
+.pagination_box .text_box {
+  display: flex;
+  gap: 49px;
+  align-items: center;
+  align-content: center;
+}
+.pagination_box .text_box a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.48px;
+  letter-spacing: -0.48px;
+  text-align: center;
+}
+.pagination_box .text_box a:nth-child(1) {
+  font-weight: 600;
+  font-size: 24px;
+}
+.pagination_box .text_box a:hover {
+  cursor: pointer;
+}
+/* .pagination_box .num_active {
+  font-weight: bold;
+  text-decoration: underline;
+} */
+/* pagination end */
+
+/* common heading hover */
+.common_heading_hover .common_heading_hover_tabs {
+  display: flex;
+  gap: 30px;
+}
+.common_heading_hover .common_heading_hover_link {
+  position: relative;
+  display: block;
+  padding: 14px 0;
+  color: var(--black);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+
+  user-select: none;
+
+  transition: color 300ms ease-in-out;
+}
+
+.common_heading_hover .common_heading_hover_link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 6px;
+  bottom: 10%;
+  width: 0;
+  left: 6px;
+  height: 3px;
+  background: var(--orangey-red);
+  transition: all 0.5s ease-in-out;
+}
+.common_heading_hover .common_heading_hover_link:hover::before {
+  width: 100%;
+}
+.common_heading_hover .common_heading_hover_link:hover {
+  color: var(--orangey-red);
+}
+.common_heading_hover
+  .common_heading_hover_link.common_heading_hover_link_active {
+  color: var(--orangey-red);
+  font-weight: 500;
+}
+
+/* drop down */
+
+.dropdown-content {
+  display: none;
+  margin-left: 10px;
+  color: #000; /* Default color for the content text */
+}
+
+.dropdown-header.active .dropdown-content {
+  display: block;
+}
+
+.dropdown.active .dropdown-header {
+  color: #000; /* Change color of the active header text */
+}
+
+.dropdown-header.active .dropdown-toggle {
+  transform: rotate(180deg);
 }
