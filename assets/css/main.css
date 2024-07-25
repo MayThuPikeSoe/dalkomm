@@ -446,7 +446,9 @@
   margin-top: 12px;
 }
 /* footer */
-
+.footer {
+  margin-top: 96px;
+}
 .footer_wrap {
   display: flex;
   justify-content: space-between;
