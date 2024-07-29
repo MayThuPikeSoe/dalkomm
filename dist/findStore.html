@@ -226,98 +226,152 @@
   </ul>
 </header>
 
-    <div class="startup container">
-      <div class="common_heading_hover">
-        <ul class="common_heading_hover_tabs">
-          <li>
-            <a href="/franchisee" class="common_heading_hover_link"
-              >가맹점 개설 안내</a
-            >
-          </li>
-          <li class="current">
-            <a
-              href="/dist/startup.html"
-              class="common_heading_hover_link common_heading_hover_link_active"
-              >창업 상담 신청</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="startup_cont">
-        <div class="startup_title">
-          <h3>지역별 담당자 정보</h3>
-        </div>
-        <div class="startup_flex">
-          <div class="startup_search_list pc_hidden">
-            <div class="startup_search_list_item">
-              <button class="startup_btn">서울/인천</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">경기</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">강원</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">대전</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">세종</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">광주</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">충청</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">전라</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">부산</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">대구</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">울산</button>
-            </div>
-            <div class="startup_search_list_item">
-              <button class="startup_btn">경상</button>
-            </div>
-          </div>
-          <div class="startup_search_list mobile_hidden">
-            <div class="custom-select">
-              <select>
-                <option value="option1" selected>시/도</option>
+    <div class="find_store notice container">
+      <!-- <div
+        class="breadcrumbs max-wrap gutter aos-init aos-animate"
+        data-aos="fade-down"
+      >
+        <a href="/" class="home">홈</a>
+        <a href="/news">새로운 소식</a>
+        <span class="me">공지사항</span>
+      </div> -->
+      <div class="find_store_search_list">
+        <div class="select_list">
+          <select class="select medium city">
+            <option value="">시 전체</option>
 
-                <option value="option1">서울/인천</option>
-                <option value="option2">경기</option>
-                <option value="option3">강원</option>
-                <option value="option3">대전</option>
-                <option value="option3">세종</option>
-                <option value="option3">광주</option>
-                <option value="option3">충청</option>
-                <option value="option3">전라</option>
-                <option value="option3">부산</option>
-                <option value="option3">대구</option>
-                <option value="option3">울산</option>
-                <option value="option3">경상</option>
-              </select>
-            </div>
-          </div>
-          <div class="startup_card">
-            <img src="/images/dalkomm_org.svg" alt="" />
-            <div class="startup_card_title">
-              <strong>달콤커피 가맹문의</strong>
-            </div>
-            <p class="contact">
-              1661-1399 <br />(내선번호 2번)<br />
-              ksc@dalkomm.com
-            </p>
-          </div>
+            <option value="서울시">서울시</option>
+            <option value="인천시">인천시</option>
+            <option value="경상북도">경상북도</option>
+            <option value="강원도">강원도</option>
+            <option value="경기도">경기도</option>
+            <option value="부산시">부산시</option>
+            <option value="전라남도">전라남도</option>
+            <option value="광주시">광주시</option>
+            <option value="대전시">대전시</option>
+            <option value="충청남도">충청남도</option>
+            <option value="충청북도">충청북도</option>
+            <option value="울산시">울산시</option>
+            <option value="세종시">세종시</option>
+            <option value="전라북도">전라북도</option>
+            <option value="대구시">대구시</option>
+            <option value="경상남도">경상남도</option>
+            <option value="제주도">제주도</option>
+          </select>
+          <select class="select medium sub-city">
+            <option hidden="" value="">군/구 전체</option>
+          </select>
+        </div>
+
+        <div class="marginal_finder">
+          <form method="get">
+            <input
+              class="marginal_finder_input"
+              placeholder="검색어를 입력하세요."
+            />
+
+            <button type="submit" class="marginal_finder_submit">
+              <img src="/images/ic_search.svg" alt="" />
+            </button>
+          </form>
         </div>
       </div>
+      <div class="notice_list">
+        <div class="notice_list_items">
+          <a href="#" class="notice_list_item">
+            <div class="notice_list_item_text">
+              <p class="line_clamp_3 notice_list_item_text">경상</p>
+
+              <h2 class="line_clamp_2">함양휴게소(통영)점</h2>
+              <p class="date">경상남도 함양군 지곡면 효산길 23-31</p>
+            </div>
+            <img src="/images/ic_arrow.svg" class="find_store_img" alt="" />
+          </a>
+          <a href="#" class="notice_list_item">
+            <div class="notice_list_item_text">
+              <p class="line_clamp_3 notice_list_item_text">충청</p>
+
+              <h2 class="line_clamp_2">청주휴게소(서울)점</h2>
+              <p class="date">
+                충청북도 청주시 흥덕구 옥산면 경부고속도로 3181
+              </p>
+            </div>
+
+            <img src="/images/ic_arrow.svg" class="find_store_img" alt="" />
+          </a>
+          <a href="#" class="notice_list_item">
+            <div class="notice_list_item_text">
+              <p class="line_clamp_3 notice_list_item_text">전남</p>
+
+              <h2 class="line_clamp_2">곡성기차마을휴게소점</h2>
+              <p class="date">전남 곡성군 겸면 호남고속도로 49</p>
+            </div>
+
+            <img src="/images/ic_arrow.svg" class="find_store_img" alt="" />
+          </a>
+          <a href="#" class="notice_list_item">
+            <div class="notice_list_item_text">
+              <p class="line_clamp_3 notice_list_item_text">경남</p>
+
+              <h2 class="line_clamp_2">함양휴게소점(대전방향)</h2>
+              <p class="date">경남 함양군 지곡면 효산길23-11</p>
+            </div>
+
+            <img src="/images/ic_arrow.svg" class="find_store_img" alt="" />
+          </a>
+          <a href="#" class="notice_list_item">
+            <div class="notice_list_item_text">
+              <p class="line_clamp_3 notice_list_item_text">전북</p>
+
+              <h2 class="line_clamp_2">진안마이산휴게소점</h2>
+              <p class="date">전북 진안군 진안읍 익산장수고속도로41</p>
+            </div>
+
+            <img src="/images/ic_arrow.svg" class="find_store_img" alt="" />
+          </a>
+          <a href="#" class="notice_list_item">
+            <div class="notice_list_item_text">
+              <p class="line_clamp_3 notice_list_item_text">경기</p>
+
+              <h2 class="line_clamp_2">의왕휴게소(서울방향)점</h2>
+              <p class="date">경기도 의왕시 오전로 24</p>
+            </div>
+
+            <img src="/images/ic_arrow.svg" class="find_store_img" alt="" />
+          </a>
+        </div>
+      </div>
+      <button type="button" class="btn circle more aos-init" data-aos="fade-up">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="142px"
+          height="142px"
+          viewBox="0 0 142 142"
+          enable-background="new 0 0 142 142"
+          xml:space="preserve"
+        >
+          <defs>
+            <path
+              id="circlePath"
+              d="M 71, 71 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+            ></path>
+          </defs>
+          <circle cx="71" cy="100" r="35.5" fill="none"></circle>
+          <g>
+            <use xlink:href="#circlePath" fill="none"></use>
+            <text fill="#000" class="en">
+              <textPath xlink:href="#circlePath">
+                SHOW MORE SHOW MORE SHOW MORE SHOW MORE SHOW MORE
+              </textPath>
+            </text>
+          </g>
+        </svg>
+        <img src="/images/ic_arrow.svg" class="icon" alt="" />
+      </button>
     </div>
 
     <footer id="footer" class="footer container">
@@ -457,14 +511,5 @@
   </script>
 </footer>
 
-    <script>
-      let startupBtn = document.querySelectorAll(".startup_btn");
-      startupBtn.forEach((btn) => {
-        btn.onclick = function () {
-          startupBtn.forEach((b) => b.classList.remove("active"));
-          btn.classList.toggle("active");
-        };
-      });
-    </script>
   </body>
 </html>

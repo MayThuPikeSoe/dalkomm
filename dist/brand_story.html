@@ -7,7 +7,16 @@
 <title>Project Name</title>
 
 <!-- CSS -->
-
+<link
+  rel="stylesheet"
+  href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
 <link
   href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
   rel="stylesheet"
@@ -38,6 +47,9 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<!-- Bootstrap js  -->
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <!-- Common script -->
 <script src="../assets/js/common.js"></script>
 
@@ -91,8 +103,8 @@
           <div class="depth2_wrapp">
             <ul class="lnb">
               <li><a href="/dist/brand_story.html">브랜드 이야기</a></li>
-              <li><a href="">App 소개</a></li>
-              <li><a href="">다날에프엔비 이야기</a></li>
+              <li><a href="/dist/appIntro.html">App 소개</a></li>
+              <li><a href="/dist/danal_intro.html">다날에프엔비 이야기</a></li>
             </ul>
           </div>
         </div>
@@ -102,18 +114,18 @@
         <div class="depth2">
           <div class="depth2_wrapp">
             <ul class="lnb">
-              <li><a href="">메뉴</a></li>
+              <li><a href="/dist/menu.html">메뉴</a></li>
             </ul>
           </div>
         </div>
       </li>
       <li>
-        <a href="" class="header_link">매장</a>
+        <a href="/dist/findStore.html" class="header_link">매장</a>
         <div class="depth2">
           <div class="depth2_wrapp">
             <ul class="lnb">
-              <li><a href="">매장찾기</a></li>
-              <li><a href="">글로벌 달콤</a></li>
+              <li><a href="/dist/findStore.html">매장찾기</a></li>
+              <li><a href="/dist/global.html">글로벌 달콤</a></li>
             </ul>
           </div>
         </div>
@@ -125,10 +137,10 @@
         <div class="depth2">
           <div class="depth2_wrapp">
             <ul class="lnb">
-              <li><a href="/dist/new_page.html">뉴스</a></li>
-              <li><a href="">공지사항</a></li>
+              <li><a href="/dist/new.html">뉴스</a></li>
+              <li><a href="/dist/notice.html">공지사항</a></li>
               <li>
-                <a href="">달콤 스토리</a>
+                <a href="/dist/story.html">달콤 스토리</a>
               </li>
             </ul>
           </div>
@@ -140,15 +152,15 @@
           <div class="depth2_wrapp">
             <ul class="lnb">
               <li>
-                <a href="">가맹점 개설 안내</a>
+                <a href="/dist/franchiseeIntro.html">가맹점 개설 안내</a>
               </li>
-              <li><a href="">창업 상담 신청</a></li>
+              <li><a href="/dist/startup.html">창업 상담 신청</a></li>
             </ul>
           </div>
         </div>
       </li>
       <li class="shop_btn">
-        <a href=""><span class="stress">SHOP</span></a>
+        <a href="#"><span class="stress">SHOP</span></a>
       </li>
     </ul>
     <div class="head_contact">
@@ -168,48 +180,47 @@
   <ul class="mo_menu">
     <li class="mo_list depth1">
       <a href="#" class="mo_item"
-        ><span>회사소개</span
-        ><img src="../../assets/imgs/icons/ico_arr_bottom_black.png" alt=""
+        ><span>회사소개</span><img src="/images/ic_arrow_down.svg" alt=""
       /></a>
       <ul class="mo_snb">
         <li><a href="/dist/brand_story.html">브랜드 이야기</a></li>
-        <li><a href="">App 소개</a></li>
-        <li><a href="">다날에프엔비 이야기</a></li>
+        <li><a href="/dist/appIntro.html">App 소개</a></li>
+        <li><a href="/dist/danal_intro.html">다날에프엔비 이야기</a></li>
       </ul>
     </li>
     <li class="mo_list depth1">
       <a href="#" class="mo_item"
-        ><span>건축갤러리</span><img src="" alt=""
+        ><span>건축갤러리</span><img src="/images/ic_arrow_down.svg" alt=""
       /></a>
       <ul class="mo_snb">
-        <li><a href="">메뉴</a></li>
+        <li><a href="/dist/menu.html">메뉴</a></li>
       </ul>
     </li>
 
     <li class="mo_list depth1">
       <a href="#" class="mo_item"
-        ><span>하우스톡 소식</span><img src="" alt=""
+        ><span>하우스톡 소식</span><img src="/images/ic_arrow_down.svg" alt=""
       /></a>
       <ul class="mo_snb">
-        <li><a href="">매장찾기</a></li>
-        <li><a href="">글로벌 달콤 </a></li>
+        <li><a href="/dist/findStore.html">매장찾기</a></li>
+        <li><a href="/dist/global.html">글로벌 달콤 </a></li>
       </ul>
     </li>
     <li class="mo_list depth1">
-      <a href="#" class="mo_item"><span>미디어</span><img src="" alt="" /></a>
+      <a href="#" class="mo_item"><span>미디어</span><img src="/images/ic_arrow_down.svg" alt="" /></a>
       <ul class="mo_snb">
-        <li><a href="">뉴스</a></li>
-        <li><a href="">공지사항</a></li>
-        <li><a href="">달콤 스토리</a></li>
+        <li><a href="/dist/new.html">뉴스</a></li>
+        <li><a href="/dist/notice.html">공지사항</a></li>
+        <li><a href="/dist/story.html">달콤 스토리</a></li>
       </ul>
     </li>
     <li class="mo_list depth1">
       <a href="#" class="mo_item"
-        ><span>상담/신청</span><img src="" alt=""
+        ><span>상담/신청</span><img src="/images/ic_arrow_down.svg" alt=""
       /></a>
       <ul class="mo_snb">
-        <li><a href="">가맹점 개설 안내</a></li>
-        <li><a href="">창업 상담 신청</a></li>
+        <li><a href="/dist/franchiseeIntro.html">가맹점 개설 안내</a></li>
+        <li><a href="/dist/startup.html">창업 상담 신청</a></li>
       </ul>
     </li>
   </ul>
@@ -272,21 +283,23 @@
         </section>
       </div>
       <div class="section character">
-        <section class="inner aos-init aos-animate" data-aos="fade">
+        <section class="inner">
           <h3 class="section_title">Brand Character</h3>
 
-          <div
-            class="character_imgs aos-init aos-animate container"
-            data-aos="fade-up"
-          >
-            <div class="img-wrap">
+          <div class="character_imgs aos-init aos-animate">
+            <div class="img-wrap1 img-wrap">
               <img src="/images/img_dak-k.png" alt="Dal.K" />
             </div>
-            <div class="text-wrap">
+            <div
+              class="text-wrap aos-init aos-animate"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+            >
               <p class="title">
                 <img src="/images/Dal.K.png" alt="Dal.K" />짧은 부리 두루미
               </p>
-              <dl class="flex large">
+              <dl class="flex flex_list large">
                 <dt>나이</dt>
                 <dd>30대 초반</dd>
                 <dt>MBTI</dt>
@@ -325,10 +338,7 @@
             </div>
           </div>
 
-          <div
-            class="flex flex_fox aos-init aos-animate container"
-            data-aos="fade-up"
-          >
+          <div class="flex1 flex flex_fox aos-init aos-animate" data-aos="fade-up">
             <div class="text-wrap text_wrap_1">
               <p class="title">
                 <img
@@ -378,7 +388,7 @@
                 </dd>
               </dl>
             </div>
-            <div class="img-wrap">
+            <div class="img-wrap img-wrap1">
               <img
                 src="/images/img_fox-m.png"
                 alt="Fox.M"
@@ -389,7 +399,7 @@
           </div>
         </section>
       </div>
-      <div class="brand_story_content container">
+      <div class="brand_story_content">
         <h3 class="brand_story_title section_title">Contents</h3>
         <div class="brand_story_contents_box">
           <div class="brand_story_contents_box_left">
@@ -514,7 +524,7 @@
           <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
         </ul>
       </li>
-      <li class="dropdown-header">
+      <li class="dropdown-header ">
         <strong
           >파트너를 위한 달콤<a href="#forP" class="btn more"
             ><i class="ico1 acc-arr"></i></a

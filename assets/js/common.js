@@ -95,6 +95,46 @@ $(document).ready(function () {
     $(this).toggleClass("open").find(".mo_snb").toggle();
   });
 
+  // footer
+
+  $(".dropdown-header").click(function () {
+    var $siblings = $(this).siblings();
+    // 다른 depth1 요소에 있는 open 클래스를 제거합니다.
+    $siblings.removeClass("open").find(".dropdown-content").hide();
+    // 클릭한 depth1 요소의 하위 요소인 mo_snb를 토글합니다.
+    $(this).toggleClass("open").find(".dropdown-content").toggle();
+  });
+
+  //pd_detail_accordion
+  const expandButtons = document.querySelectorAll('.expand-btn');
+  const collapseButtons = document.querySelectorAll('.collapse-btn');
+
+  expandButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const card = this.closest('.accordion-item');
+      const collapse = card.querySelector('.collapse');
+      const expandBtn = card.querySelector('.expand-btn');
+      const collapseBtn = card.querySelector('.collapse-btn');
+
+      collapse.classList.add('show');
+      expandBtn.style.display = 'none';
+      collapseBtn.style.display = 'inline-block';
+    });
+  });
+
+  collapseButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const card = this.closest('.accordion-item');
+      const collapse = card.querySelector('.collapse');
+      const expandBtn = card.querySelector('.expand-btn');
+      const collapseBtn = card.querySelector('.collapse-btn');
+
+      collapse.classList.remove('show');
+      expandBtn.style.display = 'inline-block';
+      collapseBtn.style.display = 'none';
+    });
+  });
+
   // swiper
   var swiper = new Swiper(".mainBanner", {
     pagination: {
@@ -106,6 +146,7 @@ $(document).ready(function () {
     navigation: {
       nextEl: ".swiper-pagination-bullet",
     },
+
     loop: "true",
   });
 
@@ -118,6 +159,31 @@ $(document).ready(function () {
       nextEl: ".new-items_nav_next",
       prevEl: ".new-items_nav_prev",
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      440: {
+        slidesPerView: 2,
+      },
+      760: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  var menuSwiper = new Swiper(".menu_list", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: "true",
+  });
+  var noticeSwiper = new Swiper(".notice_swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: "true",
+
+    navigation: {
+      nextEl: ".swiper-button-next_sec_01",
+      prevEl: ".swiper-button-prev_sec_01",
+    },
   });
 });
-

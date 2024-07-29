@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div class="app_intro">
+      <div class="app_intro_list">
+        <div class="app_intro_img_list">
+          <img src="/images/object_circle_01.png" alt="" />
+          <img
+            src="/images/object_circle_02.png"
+            class="aos-init aos-animate"
+            alt=""
+          />
+          <img
+            src="/images/object_circle_03.png"
+            class="aos-init aos-animate"
+            alt=""
+          />
+          <img src="/images/object_circle_04.png" alt="" />
+          <img src="/images/object_circle_05.png" alt="" />
+          <img src="/images/object_circle_06.png" alt="" />
+        </div>
+        <div class="img_big_box">
+          <img
+            src="/images/object_phone_01.png"
+            class="aos-init aos-animate"
+            data-aos="fade-up"
+          />
+        </div>
+        <div class="app_intro_text">
+          <h3>
+            Brand new, Dal.Komm <br />
+            새로워진 달콤 앱을 <br />
+            경험해 보세요.
+          </h3>
+
+          <p>
+            진한 커피와 달콤한 음료, 손 끝으로 달콤을 만나 보세요. <br />
+            모바일 앱으로 간편하게 주문, 결제 할 수 있습니다. <br />
+            <span class="aos init aos-animate" data-aos="fade-up">
+              앱을 사용하는 고객님을 위한 달콤한 혜택이 준비되어 있습니다.
+            </span>
+          </p>
+          <img src="/images/QRCode.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- wait -->
+      <div class="app_intro_no_wait">
+        <div class="app_intro_no_wait_item">
+          <div
+            class="app_intro_no_wait_item_text aos-init aos-animate"
+            data-aos="fade-up"
+          >
+            <h3>줄 서서 기다리지 마세요!</h3>
+            <p>
+              테이블 오더로 언제 어디서나 주문할 수 있습니다. <br />
+              테이블 오더 주문 시 스탬프가 적립되며 <br />
+              12개가 모이면 달콤한 음료 한 잔이 공짜!
+            </p>
+          </div>
+          <div class="app_intro_no_wait_images">
+            <div class="img_up aos-init aos-animate" data-aos="fade-down">
+              <img src="/images/object_phone_02.png" alt="" />
+            </div>
+            <div class="img_down aos-init aos-animate" data-aos="fade-up">
+              <img src="/images/object_phone_03.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- share  -->
+      <div class="app_intro_share container">
+        <!-- <div class="app_intro_share_item"></div> -->
+        <div class="app_intro_share_card">
+          <img
+            src="/images/object_card_01.svg"
+            class="app_intro_card aos-init aos-animate"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            alt=""
+          />
+          <img
+            src="/images/object_card_02.svg"
+            class="app_intro_card1 aos-init aos-animate"
+            alt=""
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          />
+        </div>
+        <div
+          class="app_intro_share_text aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <h3>좋은 건 함께 나누어요.</h3>
+          <p>
+            기프트카드로 달콤한 순간을 선물하세요! <br />
+            상대방의 연락처를 알고 있다면 누구에게나 선물할 수 있습니다.
+          </p>
+        </div>
+      </div>
+      <!-- member_ship -->
+      <div class="member_ship aos-init aos-animate" data-aos="fade-up">
+        <div class="member_ship_text">
+          <h3>달콤 멤버십 혜택을 누려보세요.</h3>
+          <p>
+            고객님의 달콤 이용 실적에 따라 <br />
+            실버/골드/플래티넘 등급 별 혜택이 제공됩니다.
+          </p>
+        </div>
+
+        <div class="member_ship_img">
+          <img src="/images/object_phone_04.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    ${require('./include/_footer.html')}
+  </body>
+</html>
