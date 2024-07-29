@@ -173,6 +173,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 100px;
   }
+  .year_timeline_items {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 96px;
+    width: 100%;
+    padding: 100px 0;
+  }
   .footer {
     margin-top: 70px;
   }
@@ -593,6 +599,7 @@
   .history1 {
     padding: 80px 0;
   }
+
   /* appIntro */
 
   .app_intro_img_list {
@@ -899,6 +906,32 @@
 
     gap: 40px;
   }
+
+  .year_timeline_item2 {
+    width: 90%;
+    height: 60px;
+    background-color: #0079c7;
+    position: relative;
+  }
+  .year_title_box2 h2 {
+    color: var(--bs-white);
+    text-align: center;
+    font-size: 34px;
+    padding: 0 35px;
+  }
+  .year_title_box2 h2:before {
+    width: 0;
+    height: 0;
+    content: "";
+    top: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 15px solid #0079c7;
+
+    position: absolute;
+    right: -15px;
+  }
+
   /* story */
   .product_cards_container {
     grid-template-columns: 1fr;
@@ -1357,6 +1390,16 @@
   .find_store .icon {
     top: 20%;
     left: 46%;
+  }
+  /* supporter */
+  .supporter_description {
+    width: 100%;
+  }
+  .supporter {
+    padding-left: 0px;
+  }
+  .supporter_title {
+    font-size: 28px;
   }
   /* menu */
   .menu .product_card_item_content h3 {
