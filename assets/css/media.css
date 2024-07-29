@@ -5,15 +5,13 @@
     Order: header > main > sub pages > footer
 -------------------------------------------------------------------*/
 
-@media screen and (max-width: 1880.98px) {
+@media screen and (max-width: 1470.98px) {
   .new-items_nav_next {
     display: none;
   }
   .new-items_nav_prev {
     display: none;
   }
-}
-@media screen and (max-width: 1470.98px) {
   .header .gnb {
     gap: 30px;
   }
@@ -74,7 +72,6 @@
     display: block;
   }
   .new-items_nav-wrapper {
-   
     top: 80px;
   }
   /* notice */
@@ -143,6 +140,7 @@
   .notice.find_store {
     padding: 0;
   }
+
   /* menu */
   .menu .product_cards_container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -873,11 +871,18 @@
     font-size: 28px;
     height: 59px;
   }
+  .danal_intro_dates_item ul li {
+    font-size: 14px;
+  }
+  .danal_intro_history {
+    padding: 100px 0 104px;
+  }
   .danal_intro_dates_list::before {
     top: 10%;
   }
   .danal_intro_dates_list h3::before {
-    top: 76%;
+    /* top: 76%; */
+    display: none;
   }
   .danal_intro_dates_item ul::before {
     top: 50%;
@@ -888,6 +893,11 @@
   }
   .danal_intro h1 {
     font-size: 38px;
+  }
+  .danal_intro_lists {
+    flex-direction: column;
+
+    gap: 40px;
   }
   /* story */
   .product_cards_container {

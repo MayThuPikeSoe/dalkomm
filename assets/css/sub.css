@@ -506,7 +506,8 @@ body {
 .danal_intro_lists {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  /* padding: 0 50px; */
+  gap: 40px;
 }
 .dananl_intro_item {
   margin-top: 96px;
@@ -522,6 +523,9 @@ body {
 }
 .danal_intro_history {
   padding: 160px 0 194px;
+}
+.danal_intro_history.history {
+  padding: 0;
 }
 .danal_intro_history h2 {
   font-size: 64px;
@@ -1191,4 +1195,25 @@ body {
 .js-accordion-content li {
   margin-top: 34px;
   position: relative;
+}
+
+.year_timeline_item {
+  display: flex;
+  align-items: center;
+}
+.year_timeline_item {
+  width: 150px;
+  height: 40px;
+  background-color: green;
+  position: relative;
+}
+.year_title_box h2 {
+  width: 0;
+  height: 0;
+  top: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; /* 40px height (20+20) */
+  border-left: 20px solid green;
+  position: absolute;
+  right: -20px;
 }
