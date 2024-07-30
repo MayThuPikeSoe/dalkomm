@@ -1309,3 +1309,22 @@ body {
   margin-right: 10px;
   height: 20px;
 }
+
+/* new Detail */
+.new_detail {
+  margin-top: 150px;
+}
+.new_detail_item {
+  display: flex;
+}
+.new_detail_item .new_detail_item_left {
+  width: 30%;
+}
+.new_detail_item .new_detail_item_right {
+  width: 50%;
+  min-height: 600px;
+}
+.new_detail_item h1 {
+  font-size: 66px;
+  font-weight: bold;
+}
