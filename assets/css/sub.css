@@ -699,9 +699,9 @@ body {
   height: auto !important;
 }
 .menu .product_card_item {
-  height: 350px;
+  /* height: 350px; */
   position: relative;
-  transition: all 2s ease;
+  transition: all 3s ease;
   overflow: hidden;
 }
 
@@ -818,9 +818,9 @@ body {
 }
 .app_intro_no_wait_images .img_up {
   position: absolute;
-  width: 28.705vw;
+  width: 24.705vw;
   right: 10vw;
-  top: -36.099vw;
+  top: -32.099vw;
 }
 .app_intro_no_wait_item_text {
   text-align: center;
@@ -834,8 +834,8 @@ body {
 }
 .app_intro_no_wait_images .img_down {
   position: absolute;
-  bottom: -30.34vw;
-  width: 28.705vw;
+  bottom: -24.34vw;
+  width: 24.705vw;
   right: 10vw;
 }
 .app_intro_no_wait {
@@ -1034,6 +1034,11 @@ body {
   border-top: 2px solid var(--black);
   margin-top: 60px;
   width: 100%;
+  min-width: 600px;
+}
+.data_table_scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* for smoother scrolling on touch devices */
 }
 .franch_see_intro .costs .data-table .title {
   font-size: 20px;
@@ -1106,7 +1111,7 @@ body {
 .btn.large {
   width: 380px;
   height: 80px;
-  line-height: 80px;
+  line-height: 70px;
   font-size: 18px;
   text-align: center;
   border: 1px solid var(--warm-grey);
@@ -1206,7 +1211,7 @@ body {
 .year_timeline_item {
   width: 90%;
   height: 80px;
-  background-color:#DB1517;
+  background-color: #db1517;
   position: relative;
 }
 .year_title_box h2 {
@@ -1222,7 +1227,7 @@ body {
   top: 0;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 20px solid #DB1517;
+  border-left: 20px solid #db1517;
 
   position: absolute;
   right: -20px;
@@ -1230,7 +1235,7 @@ body {
 .year_timeline_item2 {
   width: 90%;
   height: 80px;
-  background-color: #0079C7;
+  background-color: #0079c7;
   position: relative;
 }
 
@@ -1247,7 +1252,7 @@ body {
   top: 0;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 20px solid #0079C7;
+  border-left: 20px solid #0079c7;
 
   position: absolute;
   right: -20px;
@@ -1260,4 +1265,47 @@ body {
   margin-top: 46px;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* store detail */
+.store_detail {
+  margin-top: 150px;
+}
+.store_detail h1 {
+  font-size: 66px;
+  font-weight: bold;
+}
+.store-info-wrap .grid-list {
+  display: flex;
+  padding: 52px 0;
+  justify-content: flex-end;
+}
+.store-info-wrap .grid-list1 {
+  display: flex;
+  padding: 52px 0;
+  justify-content: flex-end;
+}
+.store-info-wrap .grid-list .dt,
+.store-info-wrap .grid-list1 .dt {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.store-info-wrap .grid-list .dd,
+.store-info-wrap .grid-list1 .dd {
+  margin-left: 25px;
+}
+.store-info-wrap .grid-list li:nth-of-type(1) {
+  width: 28%;
+}
+.store-info-wrap .grid-list li:nth-of-type(2) {
+  width: 35%;
+}
+.store-info-wrap .grid-list1 li {
+  width: 15.8%;
+}
+.store-info-wrap .grid-list li .img,
+.store-info-wrap .grid-list1 li .img {
+  width: 20px;
+  margin-right: 10px;
+  height: 20px;
 }

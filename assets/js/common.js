@@ -106,32 +106,32 @@ $(document).ready(function () {
   });
 
   //pd_detail_accordion
-  const expandButtons = document.querySelectorAll('.expand-btn');
-  const collapseButtons = document.querySelectorAll('.collapse-btn');
+  const expandButtons = document.querySelectorAll(".expand-btn");
+  const collapseButtons = document.querySelectorAll(".collapse-btn");
 
-  expandButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const card = this.closest('.accordion-item');
-      const collapse = card.querySelector('.collapse');
-      const expandBtn = card.querySelector('.expand-btn');
-      const collapseBtn = card.querySelector('.collapse-btn');
+  expandButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const card = this.closest(".accordion-item");
+      const collapse = card.querySelector(".collapse");
+      const expandBtn = card.querySelector(".expand-btn");
+      const collapseBtn = card.querySelector(".collapse-btn");
 
-      collapse.classList.add('show');
-      expandBtn.style.display = 'none';
-      collapseBtn.style.display = 'inline-block';
+      collapse.classList.add("show");
+      expandBtn.style.display = "none";
+      collapseBtn.style.display = "inline-block";
     });
   });
 
-  collapseButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const card = this.closest('.accordion-item');
-      const collapse = card.querySelector('.collapse');
-      const expandBtn = card.querySelector('.expand-btn');
-      const collapseBtn = card.querySelector('.collapse-btn');
+  collapseButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const card = this.closest(".accordion-item");
+      const collapse = card.querySelector(".collapse");
+      const expandBtn = card.querySelector(".expand-btn");
+      const collapseBtn = card.querySelector(".collapse-btn");
 
-      collapse.classList.remove('show');
-      expandBtn.style.display = 'inline-block';
-      collapseBtn.style.display = 'none';
+      collapse.classList.remove("show");
+      expandBtn.style.display = "inline-block";
+      collapseBtn.style.display = "none";
     });
   });
 
@@ -186,4 +186,7 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev_sec_01",
     },
   });
+  document.querySelector(".btn-close").addEventListener("click", ()=>{
+   document.querySelector(".floating").remove();
+  })
 });

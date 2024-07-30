@@ -38,6 +38,25 @@
     ${require('./include/_header.html')}
     ${require('./include/_mainBanner.html')}
     <main class="main">
+      <div
+        class="floating active continer"
+        style="opacity: 1"
+        id="sticker_float"
+      >
+        <div class="floating-content">
+          <img src="/images/mouse.png" class="img" />
+          <div class="text aos-init aos-animate" data-aos="fade-up">
+            <p class="main-copy">
+              달콤 시그니처 <br />
+              <span>♥</span> <br />액상커피
+            </p>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-close">
+          <img src="/images/closebtn.png" />
+        </button>
+      </div>
       <!---------------------- new item section ----------------------->
 
       <section class="new-items">
@@ -619,46 +638,57 @@
       <section class="section marginal">
         <div class="marginal_container">
           <div class="marginal_left_bg">
-            <div
-              class="marginal_item marginal_item_left aos-init aos-animate"
-              data-aos="fade-up"
-            >
+            <div class="marginal_item marginal_item_left">
               <div class="marginal_text">
                 <div
                   class="marginal_title aos-init aos-animate"
-                  data-aos="fade"
+                  data-aos="fade-right"
                   data-aos-easing="ease-out-sine"
-                  data-aos-duration="800"
+                  data-aos-duration="200"
                 >
                   테이블 오더
                 </div>
                 <div
                   class="marginal_message aos-init aos-animate"
-                  data-aos="fade"
+                  data-aos="fade-right"
                   data-aos-easing="ease-out-sine"
-                  data-aos-duration="800"
+                  data-aos-duration="250"
                 >
                   달콤 앱 고객님을 위한 다양한 해택을 만나보세요
                 </div>
-                <a href="/appIntro" class="marginal_button">View more</a>
+                <a
+                  href="/appIntro"
+                  class="marginal_button aos-init aos-animate"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-out-sine"
+                  data-aos-duration="300"
+                  >View more</a
+                >
               </div>
+              <img
+                src="/images/phone.PNG"
+                alt=""
+                class="aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              />
             </div>
           </div>
 
           <div class="marginal_item marginal_item_right">
             <div
               class="marginal_title aos-init aos-animate"
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-easing="ease-out-sine"
-              data-aos-duration="800"
+              data-aos-duration="300"
             >
               매장찾기
             </div>
             <div
               class="marginal_message aos-init aos-animate"
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-easing="ease-out-sine"
-              data-aos-duration="800"
+              data-aos-duration="400"
             >
               내주변 가까운 달콤 매장을 찾아보세요!
             </div>
