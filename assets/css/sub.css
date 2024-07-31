@@ -531,6 +531,7 @@ body {
   font-size: 64px;
   color: var(--orangey-red);
   font-weight: bold;
+  margin: 0 230px;
 }
 .danal_intro_dates_list {
   display: flex;
@@ -568,9 +569,13 @@ body {
   border-radius: 10px;
   background-color: var(--black);
 }
+.danal_intro_history_lists.pc_hidden {
+  display: none;
+}
 .danal_intro_date_list_item {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  margin: 0 230px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .danal_intro_dates_item {
   width: 300px;
@@ -1278,11 +1283,13 @@ body {
 .store-info-wrap .grid-list {
   display: flex;
   padding: 52px 0;
+  gap: 80px;
   justify-content: flex-end;
 }
 .store-info-wrap .grid-list1 {
   display: flex;
   padding: 52px 0;
+
   justify-content: flex-end;
 }
 .store-info-wrap .grid-list .dt,
@@ -1301,7 +1308,7 @@ body {
   width: 35%;
 }
 .store-info-wrap .grid-list1 li {
-  width: 15.8%;
+  width: 17%;
 }
 .store-info-wrap .grid-list li .img,
 .store-info-wrap .grid-list1 li .img {
@@ -1309,22 +1316,97 @@ body {
   margin-right: 10px;
   height: 20px;
 }
-
+.map-container {
+  position: relative;
+  margin: 180px 0;
+  width: 100%;
+  height: 600px; /* Adjust the height as needed */
+}
+.map-container.pc_hidden {
+  display: none;
+}
+.map-container.mobile_hidden {
+  display: block;
+}
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove border */
+}
 /* new Detail */
 .new_detail {
   margin-top: 150px;
+  margin-bottom: 200px;
 }
-.new_detail_item {
+
+
+.right-content .btn {
+  width: 380px;
+  border: 1px solid var(--black);
+  height: 70px;
   display: flex;
+  margin-top: 90px;
+  border-radius: 0px;
+  justify-content: center;
+  align-items: center;
 }
-.new_detail_item .new_detail_item_left {
-  width: 30%;
-}
-.new_detail_item .new_detail_item_right {
-  width: 50%;
-  min-height: 600px;
+.right-content .btn:hover {
+  background: var(--orangey-red);
+  color: var(--bs-white);
+  border: none;
 }
 .new_detail_item h1 {
   font-size: 66px;
   font-weight: bold;
 }
+
+.content-container.pc_hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.content-container.mobile_hidden {
+  opacity: 1;
+  visibility: visible;
+}
+.content-container {
+  display: flex;
+  width: 100%;
+}
+.content-container > * {
+  width: 50%;
+}
+.right-content {
+  padding-right: 15px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.left-content {
+  height: 100vh;
+
+  position: relative;
+}
+.left-content h1 {
+  font-size: 66px;
+  line-height: 1.52;
+  font-weight: bold;
+}
+.left-content .date {
+  font-size: 18px;
+  margin-top: 50px;
+}
+.left-content img {
+  width: 300px;
+  height: 300px;
+}
+.left-content p {
+  font-size: 18px;
+}
+
+.left-content > * {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+

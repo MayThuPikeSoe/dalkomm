@@ -186,7 +186,13 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev_sec_01",
     },
   });
-  document.querySelector(".btn-close").addEventListener("click", ()=>{
-   document.querySelector(".floating").remove();
-  })
+  document.querySelector(".btn-close").addEventListener("click", () => {
+    document.querySelector(".floating").remove();
+  });
 });
+
+
+
+
+
+

@@ -27,6 +27,21 @@
   .mo_menu.active {
     display: none;
   }
+  .danal_intro_date_list_item {
+    margin: 0 110px;
+  }
+  .danal_intro_history h2 {
+    margin: 0 110px;
+  }
+  .map-container.pc_hidden {
+    display: block;
+  }
+  .map-container.mobile_hidden {
+    display: none;
+  }
+  .store-info-wrap .grid-list li:nth-of-type(1) {
+    width: 32%;
+  }
 }
 
 @media screen and (max-width: 1300.98px) {
@@ -112,10 +127,7 @@
     gap: 40px;
     margin-top: 96px;
   }
-  .brand_story .img-wrap1 {
-    /* margin: 80px auto;
-    max-width: 350px; */
-  }
+
   .brand_story .flex {
     gap: 0px;
     font-size: 16px;
@@ -194,6 +206,20 @@
     margin-top: 96px;
     width: 100%;
     padding: 100px 0;
+  }
+  .danal_intro_dates_item {
+    width: 250px;
+    padding-left: 30px;
+  }
+  .danal_intro_date_list_item {
+    margin: 0 30px;
+  }
+  .danal_intro_history h2 {
+    margin: 0 60px;
+  }
+
+  .left-content h1 {
+    font-size: 46px;
   }
   .footer {
     margin-top: 70px;
@@ -492,6 +518,59 @@
   .menu .product_cards_container .product_card_item {
     margin-top: 75px;
   }
+  .new_detail_item {
+    flex-direction: column;
+  }
+  .new_detail_item h1 {
+    font-size: 36px;
+  }
+  .content-container.mobile_hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+  .content-container.pc_hidden {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+  .left-content1 {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .right-content1 {
+    width: 100%;
+  }
+  .left-content1 h1 {
+    font-size: 36px;
+    line-height: 1.52;
+    font-weight: bold;
+  }
+  .left-content1 .date {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  .right-content1 .btn {
+    width: 380px;
+    border: 1px solid var(--black);
+    height: 70px;
+    display: flex;
+    margin-top: 90px;
+    border-radius: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-content1 .btn:hover {
+    background: var(--orangey-red);
+    color: var(--bs-white);
+    border: none;
+  }
+  .button_item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* footer */
   footer .max-wrap {
     display: block;
@@ -611,12 +690,72 @@
     opacity: 0.1;
     padding: 0;
   }
+  .section_tile h2 {
+    margin: 0 20px;
+    font-size: 64px;
+    margin-top: 56px;
+    font-weight: bold;
+    color: var(--red-orange);
+  }
+  .danal_intro_history_lists.mobile_hidden {
+    display: none;
+  }
+  .danal_intro_history_lists.pc_hidden {
+    display: block;
+  }
+  .danal_intro_date_items {
+    display: flex;
+    margin: 0 20px;
+  }
+  .danal_intro_date_item {
+    width: 50%;
+  }
+  .danal_intro_date_item h3 {
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+  }
+  .danal_intro_date_item h3::before {
+    position: absolute;
+    content: "";
+    top: 55px;
+    left: 0;
+    width: 12px;
+    z-index: 1;
+    height: 12px;
+    border-radius: 10px;
+    background-color: var(--black);
+  }
+  .danal_intro_date_item ul {
+    margin-top: 46px;
+    font-size: 18px;
+  }
+  .line {
+    position: relative;
+    margin-top: 46px;
+  }
+  .line::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 2px;
+    background-color: var(--black);
+    width: 100vw;
+    margin: 0;
+    opacity: 0.6;
+    padding: 0;
+  }
   .danal_intro_dates_item:nth-child(3),
   .danal_intro_dates_item:nth-child(4) {
     margin-top: 50px;
   }
   .danal_intro_dates_item {
     width: 50%;
+  }
+  .danal_intro_dates_mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .history {
     padding: 0;
@@ -671,6 +810,13 @@
     z-index: 1;
     right: -60px;
     height: 580px;
+  }
+  .store-info-wrap .grid-list li:nth-of-type(1) {
+    width: 42%;
+  }
+  .store-info-wrap .grid-list {
+    gap: 100px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -936,7 +1082,9 @@
 
     gap: 40px;
   }
-
+  .section_tile h2 {
+    font-size: 48px;
+  }
   .year_timeline_item2 {
     width: 90%;
     height: 60px;
@@ -1095,6 +1243,45 @@
   .map-wrap.uzbekistan {
     display: none;
   }
+  .map-container {
+    margin: 120px 0;
+    height: 500px;
+  }
+  .store-info-wrap .grid-list {
+    flex-direction: column;
+    gap: 0;
+    padding: 30px 0;
+  }
+  .store-info-wrap .grid-list1 {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .store-info-wrap .grid-list1 li,
+  .store-info-wrap .grid-list li {
+    display: flex;
+    min-width: 100%;
+  }
+  .store-info-wrap .grid-list1 li,
+  .store-info-wrap .grid-list li:nth-child(2) .dt {
+    display: flex;
+    align-self: center;
+  }
+  .store-info-wrap .grid-list .dt {
+    margin-bottom: 10px;
+    width: 20%;
+  }
+  .store-info-wrap .grid-list1 .dt {
+    width: 20%;
+    margin-bottom: 10px;
+  }
+  .store_detail h1 {
+    font-size: 36px;
+  }
+  .store-info-wrap .grid-list .dd,
+  .store-info-wrap .grid-list1 .dd {
+    margin-left: 0px;
+    opacity: 0.7;
+  }
   /* mo icon */
   footer .footer_items {
     display: block;
@@ -1185,11 +1372,7 @@
     display: block;
   }
 }
-@media screen and (max-width: 648.98px) {
-  .danal_intro_dates_list::before {
-    top: 8.7%;
-  }
-}
+
 @media screen and (max-width: 575.98px) {
   .new-items_nav-wrapper {
     width: calc(100% - 1.976744186vw);
@@ -1300,9 +1483,30 @@
   .danal_intro_dates_item li {
     font-size: 13px;
   }
+  .danal_intro_date_item ul {
+    margin-top: 46px;
+    font-size: 14px;
+  }
   .swiper-pagination {
     gap: 20px;
     font-size: 20px;
+  }
+  .danal_intro_date_item h3 {
+    font-size: 34px;
+  }
+
+  .store-info-wrap .grid-list li,
+  .store-info-wrap .grid-list1 li {
+    width: 100%;
+    font-size: 14px;
+  }
+  .store-info-wrap .grid-list .dt,
+  .store-info-wrap .grid-list1 .dt {
+    margin-right: 30px;
+    width: 30%;
+  }
+  .store-info-wrap .grid-list .dd {
+    margin-right: 20px;
   }
 
   /* menu */
@@ -1334,7 +1538,7 @@
   .member_ship_img {
     top: 50%;
     width: 80%;
-}
+  }
   .app_intro_no_wait_item_text {
     margin-top: 290px;
     padding-left: 20px;
@@ -1363,12 +1567,23 @@
     line-height: 1.4;
     font-weight: 500;
   }
-}
-@media screen and (max-width: 525.98px) {
-  .danal_intro_dates_list::before {
-    top: 8.4%;
+  .map-container {
+    margin: 100px 0;
+    height: 350px;
+  }
+
+  .new_detail_item h1 {
+    font-size: 22px;
+  }
+  .new_detail_item .new_detail_item_right p {
+    font-size: 15px;
+  }
+  .new_detail_item_right .btn {
+    height: 40px;
+    margin-top: 30px;
   }
 }
+
 @media screen and (max-width: 483px) {
   .marginal_item_left {
     background-size: 47.4186046512vw 63.9302325581vw;
@@ -1510,9 +1725,18 @@
     margin-top: 290px;
     padding-left: 20px;
   }
-}
-@media screen and (max-width: 380px) {
-  .danal_intro_dates_list::before {
-    top: 8.1%;
+  .map-container {
+    margin: 70px 0;
+    height: 300px;
+  }
+  .store-info-wrap .grid-list1 .dt {
+    margin-bottom: 0px;
+  }
+  .store-info-wrap .grid-list1 .dd {
+    line-height: 35px;
+  }
+  .store-info-wrap .grid-list li,
+  .store-info-wrap .grid-list1 li {
+    margin-top: 24px;
   }
 }
