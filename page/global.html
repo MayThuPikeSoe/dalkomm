@@ -37,6 +37,13 @@
   <body>
     ${require('./include/_header.html')}
     <div class="global container">
+      <div class="breadcrumbs aos-init aos-animate" data-aos="fade-down">
+        <a href="/dist/main.html" class="home">홈</a>
+        <span>.</span>
+        <a href="/dist/global.html">매장</a>
+        <span>..</span>
+        <span class="me">글로벌 달콤</span>
+      </div>
       <h1>
         Global <br />
         Dal.kom
@@ -46,9 +53,14 @@
           <div class="accordion-header" id="headingOne">
             <a class="mb-0">
               SINGAPORE
-              <button class="btn btn-sm ml-2 expand-btn" data-target="#collapseOne">+</button>
               <button
-                class="btn btn-sm ml-2 collapse-btn" 
+                class="btn btn-sm ml-2 expand-btn"
+                data-target="#collapseOne"
+              >
+                +
+              </button>
+              <button
+                class="btn btn-sm ml-2 collapse-btn"
                 style="display: none"
               >
                 -
@@ -149,9 +161,6 @@
           </div>
         </div>
       </div>
-
-
-      
     </div>
 
     ${require('./include/_footer.html')}

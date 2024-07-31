@@ -52,6 +52,8 @@
 
 <!-- Common script -->
 <script src="../assets/js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -160,7 +162,9 @@
         </div>
       </li>
       <li class="shop_btn">
-        <a href="#"><span class="stress">SHOP</span></a>
+        <a href="https://smartstore.naver.com/dalkommcoffee"
+          ><span class="stress">SHOP</span></a
+        >
       </li>
     </ul>
     <div class="head_contact">
@@ -229,6 +233,13 @@
 </header>
 
     <div class="new_page notice container">
+      <div class="breadcrumbs aos-init aos-animate" data-aos="fade-down">
+        <a href="/dist/main.html" class="home">홈</a>
+        <span>.</span>
+        <a href="/dist/new.html">새로운 소식</a>
+        <span>..</span>
+        <span class="me">뉴스</span>
+      </div>
       <div
         class="notice_tab aos-int aos-animate container"
         data-aos="fade-down"
@@ -236,17 +247,21 @@
         <div class="common_heading_hover">
           <ul class="common_heading_hover_tabs">
             <li>
-              <a href="/dist/new.html" class="common_heading_hover_link">뉴스</a>
+              <a href="/dist/new.html" class="common_heading_hover_link"
+                >뉴스</a
+              >
             </li>
             <li class="current">
               <a
-                href="/dist/common_heading_hover.html"
+                href="/dist/notice.html"
                 class="common_heading_hover_link common_heading_hover_link_active"
                 >공지사항</a
               >
             </li>
             <li>
-              <a href="/dist/story.html" class="common_heading_hover_link">달콤 스토리</a>
+              <a href="/dist/story.html" class="common_heading_hover_link"
+                >달콤 스토리</a
+              >
             </li>
           </ul>
         </div>

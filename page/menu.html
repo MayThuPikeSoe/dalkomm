@@ -36,8 +36,15 @@
   </head>
   <body>
     ${require('./include/_header.html')}
-    <div class="container menu">
-      <div class="menu_list swiper-initialized swiper-horizontal">
+    <div class="menu">
+      <div class="breadcrumbs aos-init aos-animate" data-aos="fade-down">
+        <a href="/dist/main.html" class="home">홈</a>
+        <span>.</span>
+        <a href="/dist/menu.html">메뉴</a>
+        <span>..</span>
+        <span class="me">메뉴</span>
+      </div>
+      <div class="menu_list container swiper-initialized swiper-horizontal">
         <div
           class="menu_list_cont swiper-wrapper"
           id="swiper-wrapper-958d845c10967104df"
@@ -110,14 +117,13 @@
         </div>
       </div>
 
-      <div class="product_cards_container">
+      <div class="product_cards_container container">
         <!--------- card1 -------------->
         <a
           href="/dist/product_detail.html"
           class="product_card_item menu_card_item aos-init aos-animate"
           data-aos="zoom-in-up"
         >
-         
           <div class="prodcut_img">
             <img src="/images/menu.png" alt="" />
           </div>
@@ -523,7 +529,7 @@
         <!--------- card13 -------------->
         <a
           href="/dist/product_detail.html"
-          class="product_card_item menu_card_item  aos-init aos-animate"
+          class="product_card_item menu_card_item aos-init aos-animate"
           data-aos="zoom-in-up"
         >
           <div class="product_img">
