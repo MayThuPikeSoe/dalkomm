@@ -105,6 +105,14 @@ $(document).ready(function () {
     $(this).toggleClass("open").find(".dropdown-content").toggle();
   });
 
+  // custom-select
+
+  let customSelect = document.querySelectorAll(".custom-select");
+  customSelect.forEach((customItem) => {
+    customItem.onclick = function () {
+      customItem.classList.toggle("active");
+    };
+  });
   //pd_detail_accordion
   const expandButtons = document.querySelectorAll(".expand-btn");
   const collapseButtons = document.querySelectorAll(".collapse-btn");
@@ -190,9 +198,3 @@ $(document).ready(function () {
     document.querySelector(".floating").remove();
   });
 });
-
-
-
-
-
-

@@ -47,6 +47,9 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script>
+
+</script>
 <!-- Bootstrap js  -->
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -267,7 +270,11 @@
           </div>
         </a>
         <!-------------- card 2 ----------->
-        <a href="/dist/storyDetail.html" class="product_card_item">
+        <a
+          href="/dist/storyDetail.html"
+          class="product_card_item aos-init aos-animate"
+          data-aos="zoom-in-up"
+        >
           <div class="product_img">
             <img src="/images/main2.png" alt="" />
           </div>
@@ -283,7 +290,11 @@
           </div>
         </a>
         <!-------- card 3 ------->
-        <a href="/dist/storyDetail.html" class="product_card_item">
+        <a
+          href="/dist/storyDetail.html"
+          class="product_card_item aos-init aos-animate"
+          data-aos="zoom-in-up"
+        >
           <div class="product_img">
             <img src="/images/notice2.png" alt="" />
           </div>
@@ -299,7 +310,11 @@
           </div>
         </a>
         <!-------- card 4------->
-        <a href="/dist/storyDetail.html" class="product_card_item">
+        <a
+          href="/dist/storyDetail.html"
+          class="product_card_item aos-init aos-animate"
+          data-aos="zoom-in-up"
+        >
           <div class="product_img">
             <img src="/images/story.png" alt="" />
           </div>
@@ -313,7 +328,11 @@
           </div>
         </a>
         <!-------- card 5------->
-        <a href="/dist/storyDetail.html" class="product_card_item">
+        <a
+          href="/dist/storyDetail.html"
+          class="product_card_item aos-init aos-animate"
+          data-aos="zoom-in-up"
+        >
           <div class="product_img">
             <img src="/images/story1.png" alt="" />
           </div>
@@ -327,7 +346,11 @@
           </div>
         </a>
         <!-------- card 6------->
-        <a href="/dist/storyDetail.html" class="product_card_item">
+        <a
+          href="/dist/storyDetail.html"
+          class="product_card_item aos-init aos-animate"
+          data-aos="zoom-in-up"
+        >
           <div class="product_img">
             <img src="/images/main3.png" alt="" />
           </div>
@@ -341,104 +364,138 @@
           </div>
         </a>
       </div>
-    </div>
-    <!-- pagination -->
-    <div class="pagination">
-      <div class="pagination_box">
-        <div class="img_box_cont left">
-          <div class="img_box">
-            <img src="/images/iconoir_arrow-right (1).png" alt="" />
+      <!-- pagination -->
+      <div class="pagination">
+        <div class="pagination_box">
+          <div class="img_box_cont left">
+            <div class="pagination_img_box">
+              <img src="/images/iconoir_arrow-right (1).png" alt="" />
+            </div>
           </div>
-        </div>
-        <div class="text_box">
-          <a>1</a>
-          <a class="num_active">2</a>
-          <a>3</a>
-          <a>4</a>
-          <a>5</a>
-          <a>6</a>
-        </div>
-        <div class="img_box_cont right">
-          <div class="img_box">
-            <img src="/images//start_hover.png" alt="" />
+          <div class="text_box">
+            <a>1</a>
+            <a class="num_active">2</a>
+            <a>3</a>
+            <a>4</a>
+            <a>5</a>
+            <a>6</a>
+          </div>
+          <div class="img_box_cont right">
+            <div class="pagination_img_box">
+              <img src="/images//start_hover.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <footer id="footer" class="footer container">
-  <div class="footer_wrap">
-    <img src="/images/logo.svg" class="logo" />
-
-    <ul class="footer_ul dropdown">
-      <li class="dropdown-header">
-        <strong
-          >고객을 위한 달콤<a href="#forC" class="btn more"
-            ><i class="ico1 acc-arr"></i></a
-        ></strong>
-        <ul class="dropdown-content">
-          <li><a href="/customerCS" class="em">문의하기 (Contact Us)</a></li>
-          <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
-        </ul>
-      </li>
-      <li class="dropdown-header ">
-        <strong
-          >파트너를 위한 달콤<a href="#forP" class="btn more"
-            ><i class="ico1 acc-arr"></i></a
-        ></strong>
-        <ul class="dropdown-content">
-          <li><a href="/partnerCS">협력업체 문의</a></li>
-          <li><a href="/franchiseeCS">가맹 문의</a></li>
-          <li><a href="/marketingCS">제휴·마케팅 문의</a></li>
-          <li>
-            <a href="/@resource/dalkomm_introduce_v20240612.pdf" target="_blank"
-              >브랜드 소개서</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown-header">
-        <strong
-          >개인정보 보호 및 약관<a href="#forT" class="btn more"
-            ><i class="ico1 acc-arr"></i></a
-        ></strong>
-        <ul class="dropdown-content">
-          <li><a href="/privacy">개인정보 처리방침</a></li>
-          <li><a href="/serviceTerms">서비스 이용약관</a></li>
-          <li><a href="/locationTerms">위치기반서비스 이용약관</a></li>
-          <li><a href="/videoTerms">영상정보 처리기기 운영관리 방침</a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <!-- <div class="footer_items">
-      <div class="footer_item">
-        <div class="footer_link">
+  <div class="footer_mo mobile_hidden">
+    <div class="footer_wrap aos-animate" data-aos="fade-up">
+      <img src="/images/logo.svg" class="logo" />
+      <ul class="dropdown1">
+        <li class="dropdown-header1">
           <strong
-            >고객을 위한 달콤
-            <a href="#forC" class="btn more"><i class="ico"></i></a>
-          </strong>
-        </div>
-        <br />
-        <a href="" class="contact_link">문의하기 (Contact Us)</a> <br />
-        <a href="" class="link">고객상담센터 1661-1399</a>
-      </div>
-      <div class="footer_item">
-        <div class="footer_link">
+            >고객을 위한 달콤<a href="#forC" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content1">
+            <li>
+              <a href="/dist/customerCS.html" class="em"
+                >문의하기 (Contact Us)</a
+              >
+            </li>
+            <li><a href="#">고객상담센터 1661-1399</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-header1">
           <strong
-            >파트너를 위한 달콤 <a href="" class="link">협력업체 문의</a> <br />
-            <a href="" class="link">가맹 문의</a> <br />
-            <a href="" class="link">제휴·마케팅 문의</a> <br />
-            <a href="" class="link">브랜드 소개서</a>
-          </strong>
-        </div>
-      </div>
-
-      <div class="footer_item">
-        <strong>개인정보 보호 및 약관</strong><br />
-        <a href="" class="link">개인정보 처리방침</a> <br />
-      </div>
-    </div> -->
+            >파트너를 위한 달콤<a href="#forP" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content1">
+            <li><a href="/dist/partnerCs.html">협력업체 문의</a></li>
+            <li><a href="/dist/franchiseeCs.html">가맹 문의</a></li>
+            <li><a href="/dist/marketingCs.html">제휴·마케팅 문의</a></li>
+            <li>
+              <a
+                href="/@resource/dalkomm_introduce_v20240612.pdf"
+                target="_blank"
+                >브랜드 소개서</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-header1">
+          <strong
+            >개인정보 보호 및 약관<a href="#forT" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content1">
+            <li><a href="/dist/privacy.html">개인정보 처리방침</a></li>
+            <li><a href="/dist/serviceTerms.html">서비스 이용약관</a></li>
+            <li>
+              <a href="/dist/locationTerms.html">위치기반서비스 이용약관</a>
+            </li>
+            <li>
+              <a href="/dist/videoTerms.html"
+                >영상정보 처리기기 운영관리 방침</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
+  <div class="footer_pc pc_hidden">
+    <div class="footer_wrap">
+      <img src="/images/logo.svg" class="logo" />
+
+      <ul class="footer_ul dropdown">
+        <li class="dropdown-header">
+          <strong
+            >고객을 위한 달콤<a href="" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content">
+            <li><a href="/dist/customerCS.html" class="em">문의하기 (Contact Us)</a></li>
+            <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-header">
+          <strong
+            >파트너를 위한 달콤<a href="#forP" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content">
+            <li><a href="/dist/partnerCs.html">협력업체 문의</a></li>
+            <li><a href="/dist/franchiseeCs.html">가맹 문의</a></li>
+            <li><a href="/dist/marketingCs.html">제휴·마케팅 문의</a></li>
+            <li>
+              <a
+                href="/@resource/dalkomm_introduce_v20240612.pdf"
+                target="_blank"
+                >브랜드 소개서</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-header">
+          <strong
+            >개인정보 보호 및 약관<a href="#forT" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content">
+            <li><a href="/dist/privacy.html">개인정보 처리방침</a></li>
+            <li><a href="/dist/serviceTerms.html">서비스 이용약관</a></li>
+            <li><a href="/dist/locationTerms.html">위치기반서비스 이용약관</a></li>
+            <li><a href="/dist/videoTerms.html">영상정보 처리기기 운영관리 방침</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="max-wrap flex-both-top">
     <div class="select-wrap">
       <select title="FAMILY SITE" class="select family">

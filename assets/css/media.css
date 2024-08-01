@@ -6,12 +6,12 @@
 -------------------------------------------------------------------*/
 
 @media screen and (max-width: 1470.98px) {
-  .new-items_nav_next {
+  /* .new-items_nav_next {
     display: none;
   }
   .new-items_nav_prev {
     display: none;
-  }
+  } */
   .header .gnb {
     gap: 30px;
   }
@@ -19,11 +19,11 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-  .new-items_nav-wrapper {
+  /* .new-items_nav-wrapper {
     width: calc(100% - 40.976744186vw);
     left: 40.976744186vw;
     top: 10.3488372093vw;
-  }
+  } */
   .mo_menu.active {
     display: none;
   }
@@ -41,6 +41,9 @@
   }
   .store-info-wrap .grid-list li:nth-of-type(1) {
     width: 32%;
+  }
+  .notice {
+    padding: 0;
   }
 }
 
@@ -82,7 +85,7 @@
   .marginal_item_right {
     width: 50%;
   }
-  .new-items_nav_next {
+  /* .new-items_nav_next {
     left: 35%;
     display: block;
   }
@@ -92,6 +95,23 @@
   }
   .new-items_nav-wrapper {
     top: 80px;
+  } */
+
+  .new-items_nav_next {
+    position: absolute;
+    left: 64%;
+    top: 40%;
+    /* background: url(/images/btn_nav_next.png) 0 0 no-repeat; */
+    /* left: 36%;
+    top: 13.75vw; */
+  }
+  .new-items_nav_prev {
+    position: absolute;
+    left: 38%;
+    top: 40%;
+    /* background: url(/images/btn_nav_prev.png) 0 0 no-repeat;
+    left: 10%;
+    top: 13.75vw; */
   }
   /* notice */
   .notice_items {
@@ -231,6 +251,9 @@
   footer .logo {
     display: none;
   }
+  .footer .dropdown1 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1000.98px) {
@@ -262,14 +285,28 @@
     display: none;
   }
   /* new items */
-  .new-items {
+  /* .new-items {
     background-size: 100vw 70.2325581395vw;
     height: auto !important;
+  } */
+  .new-items {
+    height: auto !important;
   }
-
-  .new-items_container {
+  .new-items_cont {
     width: 100%;
     flex-direction: column;
+  }
+  .new-items_nav_next {
+    /* position: absolute;
+    left: 86%;
+    top: 70%; */
+    display: none;
+  }
+  .new-items_nav_prev {
+    /* position: absolute;
+    left: 3%;
+    top: 70%; */
+    display: none;
   }
   .new-items_header {
     background-size: 92.3125vw 66.25vw;
@@ -575,9 +612,12 @@
   footer .max-wrap {
     display: block;
   }
-  /* .footer {
-    margin-top: 400px;
-  } */
+  .terms-wrap .data-table td,
+  .terms-wrap .data-table th {
+    padding: 20px;
+    width: auto !important;
+    font-size: 13px;
+  }
   .footer {
     margin-top: 80px;
   }
@@ -651,9 +691,9 @@
     transform: translateX(-50%);
     font-size: 50px;
   }
-  .notice {
+  /* .notice {
     padding: 140px 0 160px;
-  }
+  } */
   /* find store */
   .find_store .marginal_finder_input {
     height: 54px;
@@ -677,6 +717,9 @@
   .find_store .icon {
     top: 20%;
     left: 48%;
+  }
+  .custom-select::after {
+    top: 20%;
   }
   .danal_intro_dates_item ul::before {
     content: "";
@@ -846,11 +889,11 @@
     padding-left: 40px;
   }
 
-  .new-items_nav-wrapper {
+  /* .new-items_nav-wrapper {
     width: calc(100% - 1.976744186vw);
     left: 9.976744186vw;
     top: 75.3488372093vw;
-  }
+  } */
   .new-items_description {
     font-size: 18px;
     width: 435px;
@@ -859,7 +902,18 @@
   .new-items_title {
     font-size: 32px;
   }
-
+  .new-items_nav_next {
+    /* position: absolute;
+    left: 45%;
+    top: 70%; */
+    display: none;
+  }
+  .new-items_nav_prev {
+    /* position: absolute;
+    left: 0%;
+    top: 70%; */
+    display: none;
+  }
   .new-items_item.swiper-slide-active .new-items_img {
     min-width: 160px;
     height: 278px;
@@ -991,7 +1045,6 @@
     width: 100%;
   }
   .find_store_search_list select {
-    width: 50%;
     margin-right: 0px;
   }
   .find_store .marginal_finder {
@@ -1001,14 +1054,20 @@
     width: 94%;
     font-size: 15px;
   }
+  .custom-select select {
+    height: 40px;
+  }
+  .custom-select::after {
+    top: 18px;
+  }
   .find_store .icon {
     top: 20%;
     left: 47.5%;
   }
   /* notice */
-  .notice {
+  /* .notice {
     padding: 130px 0 60px;
-  }
+  } */
   .notice_list {
     margin-top: 40px;
   }
@@ -1130,7 +1189,9 @@
   .story .story_text_title {
     font-size: 22px;
   }
-
+  .story h2 {
+    font-size: 50px;
+  }
   .story .story_text_cont {
     font-size: 14px;
   }
@@ -1323,6 +1384,12 @@
   .footer .footer_ul {
     display: block;
   }
+  .footer_pc.pc_hidden {
+    display: block;
+  }
+  .footer_mo.mobile_hidden {
+    display: none;
+  }
   footer strong {
     position: relative;
     display: block;
@@ -1467,14 +1534,16 @@
   .mobile_hidden {
     display: none;
   }
-
+  .pagination {
+    margin-top: 0px;
+  }
+  .common_heading_hover .common_heading_hover_link {
+    font-size: 20px;
+  }
   .pc_hidden {
     display: inline-block;
   }
 
-  .notice {
-    padding: 70px 0 60px;
-  }
   .main_banner_txt p {
     font-size: 16px;
   }
@@ -1501,7 +1570,9 @@
     top: 20%;
     left: 47%;
   }
-
+  .notice.find_store .notice_list_item h2 {
+    font-size: 34px;
+  }
   .danal_intro_dates_list::before {
     top: 8.86%;
   }
@@ -1611,6 +1682,21 @@
     height: 40px;
     margin-top: 30px;
   }
+  .terms-wrap .title {
+    font-size: 26px;
+  }
+  .franchisee_cs .form_container {
+    gap: 0px;
+  }
+  .franchisee_cs .title {
+    flex-direction: column;
+  }
+  textarea {
+    font-size: 12px;
+  }
+  .location_term .terms-wrap .title {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 483px) {
@@ -1663,9 +1749,9 @@
   .new-items_list-description {
     font-size: 13px;
   }
-  .common_heading_hover .common_heading_hover_link {
+  /* .common_heading_hover .common_heading_hover_link {
     font-size: 28px;
-  }
+  } */
   .franch_see_intro .common_heading_hover .common_heading_hover_link {
     font-size: 22px;
   }
@@ -1717,6 +1803,14 @@
   .find_store .icon {
     top: 20%;
     left: 46%;
+  }
+  /* story */
+  .story h2 {
+    font-size: 36px;
+  }
+
+  .pagination_box .text_box {
+    gap: 29px;
   }
   /* supporter */
   .supporter_description {
@@ -1782,5 +1876,29 @@
   .button_item .btn {
     width: 100%;
     height: 50px;
+  }
+  .franchisee_cs .button .btn {
+    width: 100%;
+    height: 50px;
+  }
+  .franchisee_cs .form_container {
+    flex-direction: column;
+  }
+
+  .franchisee_cs .form_left {
+    width: 100%;
+  }
+  footer .btn_apple {
+    margin-right: 0px;
+    width: 100%;
+
+    padding: 0 17px;
+  }
+  footer .btn_google {
+    width: 100%;
+    padding: 0 17px;
+  }
+  footer .playstore {
+    gap: 10px;
   }
 }

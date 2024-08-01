@@ -37,8 +37,15 @@
   <body>
     ${require('./include/_header.html')}
     <div class="franchisee_cs container">
+      <div class="breadcrumbs aos-init aos-animate" data-aos="fade-down">
+        <a href="/dist/main.html" class="home">홈</a>
+        <span>.</span>
+        <a href="/dist/partnerCs.html">새로운 소식</a>
+        <span>..</span>
+        <span class="me"> 공지사항</span>
+      </div>
       <div class="title">
-        <h1 class="common_title">가맹 문의</h1>
+        <h1 class="common_title">협력업체 문의</h1>
         <p class="sub_title">*전체항목 필수입력 사항입니다.</p>
       </div>
       <form action="">
@@ -50,12 +57,46 @@
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
             >
-              <label for="">이름</label> <br />
+              <label for="">업체명</label> <br />
+              <input
+                type="text"
+                class="input"
+                placeholder="업체명을 입력해 주세요.
+
+              "
+              />
+            </div>
+            <div
+              class="form_left_cont aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <label for="">연락처</label> <br />
+              <input
+                type="text"
+                class="input"
+                placeholder="연락처를 입력해 주세요.
+
+
+              "
+              />
+            </div>
+          </div>
+          <div class="form_right">
+            <div
+              class="form_left_cont aos-init aos-animate"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+            >
+              <label for="">담당자 이름</label> <br />
               <input
                 type="text"
                 class="input"
                 placeholder="이름을 입력해 주세요.
-              "
+
+
+            "
               />
             </div>
             <div
@@ -67,35 +108,40 @@
               <input
                 type="text"
                 class="input"
-                placeholder="이메일을 입력해 주세요.
-
-              "
+                placeholder="메일을 입력해 주세요.
+            "
               />
             </div>
           </div>
-          <div class="form_right"></div>
         </div>
         <div
           class="form_left_cont aos-init aos-animate"
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          <label for="">기타 코멘트</label> <br />
-          <input
-            type="text"
+          <label for="">문의 내용</label> <br />
+          <textarea
+            name=""
+            id=""
             class="input"
-            placeholder="문의 내용을 작성해 주세요.
+            placeholder="문의 내용을 작성해 주세요. 회사/상품소개와 관련한 내용은 아래 관련자료 업로드에 첨부해 주시기 바랍니다.
           "
-          />
+          ></textarea>
+        </div>
+        <div
+          class="form_left_cont aos-init aos-animate"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
+          <label for="">문의 내용</label> <br />
+          <input type="file" class="input" />
         </div>
         <div
           class="form_left_cont aos-init aos-animate"
           data-aos="fade-right"
           data-aos-delay="500"
         >
-          <label for=""
-            >개인정보 수집·이용에 대한 안내(필수 수집·이용 항목)</label
-          >
+          <label for="">관련자료 업로드</label>
           <br />
           <p class="form_left_text">
             문의주신 내용의 답변을 위하여 고객님의 개인정보를 수집합니다.

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  rel="stylesheet"
+  href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+
+<link rel="stylesheet" href="../assets/css/media.css" />
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script>
+
+</script>
+<!-- Bootstrap js  -->
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header class="header">
+  <div class="lnb_bg"></div>
+  <div class="header_inn">
+    <a href="/dist/main.html" class="head_img">
+      <img src="/images/logo.svg" alt="house talk" />
+    </a>
+    <ul class="gnb">
+      <li>
+        <a href="" class="header_link">Dal.komm</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/brand_story.html">브랜드 이야기</a></li>
+              <li><a href="/dist/appIntro.html">App 소개</a></li>
+              <li><a href="/dist/danal_intro.html">다날에프엔비 이야기</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">메뉴</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/menu.html">메뉴</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="/dist/findStore.html" class="header_link">매장</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/findStore.html">매장찾기</a></li>
+              <li><a href="/dist/global.html">글로벌 달콤</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link"
+          ><span>새로운 소식 </span><i class="ico dot"><span>new</span></i></a
+        >
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/new.html">뉴스</a></li>
+              <li><a href="/dist/notice.html">공지사항</a></li>
+              <li>
+                <a href="/dist/story.html">달콤 스토리</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">창업안내</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li>
+                <a href="/dist/franchiseeIntro.html">가맹점 개설 안내</a>
+              </li>
+              <li><a href="/dist/startup.html">창업 상담 신청</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="shop_btn">
+        <a href="https://smartstore.naver.com/dalkommcoffee"
+          ><span class="stress">SHOP</span></a
+        >
+      </li>
+    </ul>
+    <div class="head_contact">
+      <button class="hamburger">
+        <span>line</span>
+        <span>line</span>
+        <span>line</span>
+      </button>
+    </div>
+  </div>
+  <div class="all_search_input" style="display: none">
+    <input type="search" placeholder="검색어를 입력하세요." />
+    <button type="button" class="header_search_btn cursor-pointer"></button>
+  </div>
+
+  <!-- mobile menu -->
+  <ul class="mo_menu">
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>회사소개</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/brand_story.html">브랜드 이야기</a></li>
+        <li><a href="/dist/appIntro.html">App 소개</a></li>
+        <li><a href="/dist/danal_intro.html">다날에프엔비 이야기</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>건축갤러리</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/menu.html">메뉴</a></li>
+      </ul>
+    </li>
+
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>하우스톡 소식</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/findStore.html">매장찾기</a></li>
+        <li><a href="/dist/global.html">글로벌 달콤 </a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>미디어</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/new.html">뉴스</a></li>
+        <li><a href="/dist/notice.html">공지사항</a></li>
+        <li><a href="/dist/story.html">달콤 스토리</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>상담/신청</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/franchiseeIntro.html">가맹점 개설 안내</a></li>
+        <li><a href="/dist/startup.html">창업 상담 신청</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+
+    <div class="video_term container">
+      <div class="breadcrumbs aos-init aos-animate" data-aos="fade-down">
+        <a href="/dist/main.html" class="home">홈</a>
+        <span>.</span>
+        <a href="/dist/videoTerms.html">새로운 소식</a>
+        <span>..</span>
+        <span class="me"> 공지사항</span>
+      </div>
+      <div class="terms-wrap aos-init aos-animate" data-aos="fade-up">
+        <p>
+          주식회사 다날에프엔비(이하 ‘회사’)는 영상정보처리기기 운영∙관리 방침을
+          통해 회사에서 처리하는 영상정보가 어떠한 용도와 방식으로 이용 관리되고
+          있는지 알려드립니다.
+        </p>
+
+        <h3 class="title">1. 영상정보처리기기의 설치 근거 및 설치 목적</h3>
+        <p class="mt1">
+          회사는 「개인정보 보호법」제25조 제1항에 따라 다음과 같은 목적으로
+          영상정보처리기기를 설치․운영 합니다.
+        </p>
+        <p class="indent-dot">· 시설안전 및 화재 예방</p>
+        <p class="indent-dot">· 고객의 안전을 위한 범죄 예방</p>
+
+        <h3 class="title">
+          2. 영상정보차리기기의 설치 대수, 설치 위치 및 촬영범위
+        </h3>
+        <div class="table-wrap mt1">
+          <table class="data-table" width="100%">
+            <thead>
+              <tr>
+                <th rowspan="2"><span>NO</span></th>
+                <th rowspan="2"><span>설치 위치</span></th>
+                <th rowspan="2"><span>설치 대수</span></th>
+                <th colspan="6" style="text-align: center; padding-left: 0px">
+                  <span>촬영 범위</span>
+                </th>
+              </tr>
+              <tr>
+                <th style="text-align: center; padding-left: 0px">포스</th>
+                <th style="text-align: center; padding-left: 0px">바</th>
+                <th style="text-align: center; padding-left: 0px">매장내부</th>
+                <th style="text-align: center; padding-left: 0px">
+                  매장입구(안)
+                </th>
+                <th style="text-align: center; padding-left: 0px">
+                  매장입구(밖)
+                </th>
+                <th style="text-align: center; padding-left: 0px">주차장</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>가락시장역점</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>3</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>성수트러스톤점</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>3</span></td>
+                <td style="text-align: center"><span>역삼역점</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>3</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>분당서현점</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>3</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>5</span></td>
+                <td style="text-align: center">
+                  <span>경희국제캠퍼스점</span>
+                </td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>6</span></td>
+                <td style="text-align: center"><span>경희의료원점 </span></td>
+                <td style="text-align: center"><span>7</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>7</span></td>
+                <td style="text-align: center">
+                  <span>경희의료원 본관점</span>
+                </td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>8</span></td>
+                <td style="text-align: center">
+                  <span>경희의료원 암병동점</span>
+                </td>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>9</span></td>
+                <td style="text-align: center"><span>영등포로터리점</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>10</span></td>
+                <td style="text-align: center"><span>고양터미널점</span></td>
+                <td style="text-align: center"><span>7</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>4</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>11</span></td>
+                <td style="text-align: center"><span>청계광장점</span></td>
+                <td style="text-align: center"><span>11</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>8</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>12</span></td>
+                <td style="text-align: center"><span>교대역점</span></td>
+                <td style="text-align: center"><span>11</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>8</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>13</span></td>
+                <td style="text-align: center"><span>광주쌍령DT점</span></td>
+                <td style="text-align: center"><span>18</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>10</span></td>
+                <td style="text-align: center"><span>2</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>4</span></td>
+              </tr>
+              <tr>
+                <td style="text-align: center"><span>14</span></td>
+                <td style="text-align: center">
+                  <span>덕소리버사이드점</span>
+                </td>
+                <td style="text-align: center"><span>16</span></td>
+                <td style="text-align: center"><span>1</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>10</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>　</span></td>
+                <td style="text-align: center"><span>5</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="title">3. 관리책임자 및 접근권한자</h3>
+        <p class="mt1">
+          회사는 귀하의 영상정보를 보호하고 개인영상정보와 관련한 불만을
+          처리하기 위하여 아래와 같이 개인영상정보 보호 책임자를 두고 있습니다.
+        </p>
+        <div class="table-wrap mt1">
+          <table class="data-table" width="100%">
+            <thead>
+              <tr>
+                <th scope="col">구분</th>
+                <th scope="col">이름</th>
+                <th scope="col">직위</th>
+                <th scope="col">소속</th>
+                <th scope="col">연락처</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>관리책임자</td>
+                <td>조동욱</td>
+                <td>부장</td>
+                <td>직영팀</td>
+                <td>010-5572-7937</td>
+              </tr>
+              <tr>
+                <td>접근권한자</td>
+                <td colspan="4">각 매장의 점장, 시설 담당자</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="title">
+          4. 영상정보의 촬영시간, 보관기간, 보관장소 및 처리방법
+        </h3>
+        <div class="table-wrap mt1">
+          <table class="data-table" width="100%">
+            <thead>
+              <tr>
+                <th scope="col">촬영시간</th>
+                <th scope="col">보관기간</th>
+                <th scope="col">보관장소</th>
+                <th scope="col">처리방법</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>24시간</td>
+                <td>
+                  촬영일로부터 평균 14일~21일<br />(DVR장치 용량에 따라 상이)
+                </td>
+                <td>각 매장 사무실 내 DVR장치</td>
+                <td>
+                  개인영상정보의 목적 외 이용, 제3자 제공, 파기, 열람 등 요구에
+                  관한 사항을 기록․관리하고, 보관기간 만료 시 복원이 불가능한
+                  방법으로 영구 삭제합니다.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="title">
+          5. 영상정보처리기기 설치 및 관리 등의 위탁에 관한 사항
+        </h3>
+        <p class="mt1">
+          회사는 아래와 같이 영상정보처리기기 설치 및 유지보수 업무만을 위탁하고
+          있으며, 영상정보의 관리∙운영 업무는 위탁하고 있지 않습니다.
+        </p>
+        <div class="table-wrap mt1">
+          <table class="data-table" width="100%">
+            <thead>
+              <tr>
+                <th scope="col">수탁업체</th>
+                <th scope="col">담당자</th>
+                <th scope="col">연락처</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>㈜에스원</td>
+                <td>최승혁</td>
+                <td>010-9045-9522</td>
+              </tr>
+              <tr>
+                <td>(주)에이디티캡스</td>
+                <td></td>
+                <td>1588-6400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="title">6. 개인영상정보의 확인 방법 및 장소에 관한 사항</h3>
+        <p class="indent-dot mt1">
+          · 확인 방법 : 영상정보가 보관된 매장 또는 관리책임자에게 미리 연락하고
+          해당 매장 또는 회사를 방문하시면 확인 가능합니다.
+        </p>
+        <p class="indent-dot">
+          · 확인 장소 : 영상정보가 보관된 각 매장 또는 회사
+        </p>
+
+        <h3 class="title">7. 정보주체의 영상정보 열람 등 요구에 대한 조치</h3>
+        <p class="mt1">
+          귀하는 개인영상정보에 관하여 열람 또는 존재확인∙삭제를 원하는 경우
+          언제든지 회사(영상정보처리기기 운영자)에게 요구하실 수 있습니다. 단,
+          귀하가 촬영된 개인영상정보 및 명백히 정보주체의 급박한 생명, 신체,
+          재산의 이익을 위하여 필요한 개인영상정보에 한정됩니다. 나아가, 회사는
+          개인영상정보에 관하여 열람 또는 존재확인∙삭제를 요구한 경우 지체 없이
+          필요한 조치를 취합니다.
+        </p>
+
+        <h3 class="title">8. 영상정보의 안전성 확보조치</h3>
+        <p class="mt1">
+          회사에서 처리하는 영상정보는 암호화 조치 등을 통하여 안전하게 관리되고
+          있습니다. 또한 회사는 개인영상정보보호를 위한 관리적 대책으로서
+          개인정보에 대한 접근 권한을 차등부여하고 있고, 개인영상정보의 위․변조
+          방지를 위하여 개인영상정보의 생성 일시, 열람 시 열람 목적∙열람자∙열람
+          일시 등을 기록하여 관리하고 있습니다.
+        </p>
+
+        <h3 class="title">9. 개인정보 처리방침 변경에 관한 사항</h3>
+        <p class="mt1">
+          이 영상정보처리기기 운영∙관리방침은 법령∙정책 또는 보안기술의 변경에
+          따라 내용의 추가∙삭제 및 수정이 있을 시에는 시행하기 최소 7일전에 회사
+          홈페이지를 통해 변경사유 및 내용 등을 공지하도록 하겠습니다.
+        </p>
+        <h3 class="title">
+          10. 본 영상정보처리기기 운영관리 방침은 2023년 5월 12일부터
+          적용됩니다.
+        </h3>
+        <h4 class="sub-title">[부칙]</h4>
+        <p>2019년 12월 09일 영상정보처리기기 운영∙관리 방침 제정</p>
+        <p>2020년 10월 01일 영상정보처리기기 운영∙관리 방침 개정</p>
+        <p>2021년 09월 15일 영상정보처리기기 운영∙관리 방침 개정</p>
+        <p>2023년 05월 11일 영상정보처리기기 운영∙관리 방침 개정</p>
+      </div>
+      <div class="select_container aos-init aos-animate" data-aos="fade-down">
+        <div class="custom-select">
+          <select title="Privacy" class="select family">
+            <option value="/videoTerms_PC_20230511" selected="">
+              VERSION 20230511
+            </option>
+            <option value="/videoTerms_PC_20210915">VERSION 20210915</option>
+            <option value="/videoTerms_PC_20201001">VERSION 20201001</option>
+            <option value="/videoTerms_PC_20191209">VERSION 20191209</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer container">
+  <div class="footer_mo mobile_hidden">
+    <div class="footer_wrap aos-animate" data-aos="fade-up">
+      <img src="/images/logo.svg" class="logo" />
+      <ul class="dropdown1">
+        <li class="dropdown-header1">
+          <strong
+            >고객을 위한 달콤<a href="#forC" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content1">
+            <li>
+              <a href="/dist/customerCS.html" class="em"
+                >문의하기 (Contact Us)</a
+              >
+            </li>
+            <li><a href="#">고객상담센터 1661-1399</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-header1">
+          <strong
+            >파트너를 위한 달콤<a href="#forP" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content1">
+            <li><a href="/dist/partnerCs.html">협력업체 문의</a></li>
+            <li><a href="/dist/franchiseeCs.html">가맹 문의</a></li>
+            <li><a href="/dist/marketingCs.html">제휴·마케팅 문의</a></li>
+            <li>
+              <a
+                href="/@resource/dalkomm_introduce_v20240612.pdf"
+                target="_blank"
+                >브랜드 소개서</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-header1">
+          <strong
+            >개인정보 보호 및 약관<a href="#forT" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content1">
+            <li><a href="/dist/privacy.html">개인정보 처리방침</a></li>
+            <li><a href="/dist/serviceTerms.html">서비스 이용약관</a></li>
+            <li>
+              <a href="/dist/locationTerms.html">위치기반서비스 이용약관</a>
+            </li>
+            <li>
+              <a href="/dist/videoTerms.html"
+                >영상정보 처리기기 운영관리 방침</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_pc pc_hidden">
+    <div class="footer_wrap">
+      <img src="/images/logo.svg" class="logo" />
+
+      <ul class="footer_ul dropdown">
+        <li class="dropdown-header">
+          <strong
+            >고객을 위한 달콤<a href="" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content">
+            <li><a href="/dist/customerCS.html" class="em">문의하기 (Contact Us)</a></li>
+            <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-header">
+          <strong
+            >파트너를 위한 달콤<a href="#forP" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content">
+            <li><a href="/dist/partnerCs.html">협력업체 문의</a></li>
+            <li><a href="/dist/franchiseeCs.html">가맹 문의</a></li>
+            <li><a href="/dist/marketingCs.html">제휴·마케팅 문의</a></li>
+            <li>
+              <a
+                href="/@resource/dalkomm_introduce_v20240612.pdf"
+                target="_blank"
+                >브랜드 소개서</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-header">
+          <strong
+            >개인정보 보호 및 약관<a href="#forT" class="btn more"
+              ><i class="ico1 acc-arr"></i></a
+          ></strong>
+          <ul class="dropdown-content">
+            <li><a href="/dist/privacy.html">개인정보 처리방침</a></li>
+            <li><a href="/dist/serviceTerms.html">서비스 이용약관</a></li>
+            <li><a href="/dist/locationTerms.html">위치기반서비스 이용약관</a></li>
+            <li><a href="/dist/videoTerms.html">영상정보 처리기기 운영관리 방침</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="max-wrap flex-both-top">
+    <div class="select-wrap">
+      <select title="FAMILY SITE" class="select family">
+        <option value="http://www.dalkomm.com/">FAMILY SITE</option>
+        <option value="https://danal.co.kr/">다날</option>
+        <option value="https://www.danalpay.com/main/main.aspx">
+          다날페이먼트
+        </option>
+        <option value="http://www.danalenter.co.kr/index.do">
+          다날엔터테인먼트
+        </option>
+        <option value="https://www.beatcorp.io/pc">비트코퍼레이션</option>
+        <option value="http://www.danalfintech.com/">다날핀테크</option>
+        <option value="http://www.danal.jp/">다날 재팬</option>
+        <option value="https://www.flexpay.co.kr/">플렉스페이</option>
+        <option value="http://www.ssocioliving.com/default/">쏘시오리빙</option>
+        <option value="http://www.bartong.co.kr/pages/">바통</option>
+        <option value="https://befamily.co.kr/">비밀리</option>
+        <option value="https://www.wannai.co.kr/">워너아이</option>
+        <option value="https://payprotocol.io/">페이프로토콜</option>
+      </select>
+    </div>
+    <div class="copyright-wrap">
+      <p class="copyright">
+        <a href="" class="">주)다날에프엔비 + <br class="mo" /></a>
+        <span class="only-pc"> | </span>주소지 : 경기도 성남시 분당구
+        황새울로312번길 5, 5층(서현동, 세광빌딩)
+        <br />
+        대표이사 : 심순열<span> | </span> 사업자등록번호 : 144-81-09353<br
+          class="only-mo"
+        /><span class="only-pc"> | </span>통신판매업신고 : 제 2016-성남분당-0680
+        호<br />
+        Copyright ⓒ 2022 (주)달콤 All Rights Reserved.
+      </p>
+      <div class="playstore">
+        <a
+          class="btn_apple"
+          target="_blank"
+          href="https://apps.apple.com/kr/app/%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC/id1097036744"
+          ><i class="ico apple"></i> App Store</a
+        >
+        <a
+          class="btn_google"
+          target="_blank"
+          href="https://play.google.com/store/search?q=%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC&amp;c=apps"
+          ><i class="ico google"></i>Google Play</a
+        >
+        <a class="qr" href="/appIntro">
+          <img src="/images/QRCode.jpg" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll(".btn").forEach((header) => {
+      header.addEventListener("click", function () {
+        this.parentElement.classList.toggle("active");
+        console.log("click");
+      });
+    });
+  </script>
+</footer>
+
+  </body>
+</html>
