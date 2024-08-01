@@ -169,9 +169,8 @@
 .new-items {
   height: 50vw;
 }
-.new-items_container {
-  position: relative;
-}
+/* .new-items_container {
+} */
 .new-items_cont {
   display: flex;
   width: 100%;
@@ -283,26 +282,29 @@
   position: absolute;
   left: 60%;
   top: 40%;
+  z-index: 22;
   /* background: url(/images/btn_nav_next.png) 0 0 no-repeat; */
   /* left: 36%;
   top: 13.75vw; */
 }
 .new-items_nav_prev {
   position: absolute;
-  left: 43%;
+  left: 40%;
   top: 40%;
+  z-index: 22;
   /* background: url(/images/btn_nav_prev.png) 0 0 no-repeat;
   left: 10%;
   top: 13.75vw; */
 }
 .new-items_nav {
   width: 100%;
+  z-index: 22;
 }
 .new-items_nav img {
   width: 20px;
   height: 25px;
   position: absolute;
-  z-index: 10;
+  z-index: 22;
   cursor: pointer;
 }
 

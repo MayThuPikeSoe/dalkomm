@@ -295,18 +295,17 @@
   .new-items_cont {
     width: 100%;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
   }
   .new-items_nav_next {
-    /* position: absolute;
-    left: 86%;
-    top: 70%; */
-    display: none;
+    left: 37%;
+    top: 230%;
+    /* display: none; */
   }
   .new-items_nav_prev {
-    /* position: absolute;
     left: 3%;
-    top: 70%; */
-    display: none;
+    top: 230%;
   }
   .new-items_header {
     background-size: 92.3125vw 66.25vw;
@@ -318,11 +317,11 @@
   .new-items_header_cont {
     padding-left: 90px;
   }
-  .new-items_nav-wrapper {
+  /* .new-items_nav-wrapper {
     width: calc(100% - 19.976744186vw);
     left: 5.976744186vw;
     top: 85.3488372093vw;
-  }
+  } */
   .new-items_list {
     width: 100%;
     padding-top: 50px;
@@ -903,16 +902,15 @@
     font-size: 32px;
   }
   .new-items_nav_next {
-    /* position: absolute;
+    position: absolute;
     left: 45%;
-    top: 70%; */
-    display: none;
+    top: 210%;
+    /* display: none; */
   }
   .new-items_nav_prev {
-    /* position: absolute;
-    left: 0%;
-    top: 70%; */
-    display: none;
+    left: 7%;
+    top: 210%;
+    /* display: none; */
   }
   .new-items_item.swiper-slide-active .new-items_img {
     min-width: 160px;
@@ -1470,10 +1468,21 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  .new-items_nav-wrapper {
+  /* .new-items_nav-wrapper {
     width: calc(100% - 1.976744186vw);
     left: 13.976744186vw;
     top: 85.3488372093vw;
+  } */
+  .new-items_nav_next {
+    position: absolute;
+    left: 45%;
+    top: 200%;
+    /* display: none; */
+  }
+  .new-items_nav_prev {
+    left: 7%;
+    top: 200%;
+    /* display: none; */
   }
   .new-items_header_cont {
     padding-left: 30px;
@@ -1716,15 +1725,42 @@
   .marginal_message {
     font-size: 13px;
   }
-  .new-items_nav-wrapper {
+  /* .new-items_nav-wrapper {
     width: calc(100% - 1.976744186vw);
     left: 13.976744186vw;
     top: 115.3488372093vw;
+  } */
+  .new-items_nav_next {
+    position: absolute;
+    left: 49%;
+    top: 180%;
+    /* display: none; */
+  }
+  .new-items_description p {
+    padding-left: 0px;
+  }
+  .signature-item {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .signature-item_information {
+    padding-left: 0px;
+  }
+  .signature-item_description {
+    font-size: 20px;
+    width: 95%;
+  }
+  .new-items_nav_prev {
+    left: 9%;
+    top: 180%;
+    /* display: none; */
   }
   .new-items {
     background-size: 100vw 70.2325581395vw;
     height: 220vw;
   }
+
   .new-items_header {
     background-size: 92.3125vw 88.25vw;
     height: 95vw;
