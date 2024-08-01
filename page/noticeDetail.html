@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ${require('./include/_meta.html')}
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    ${require('./include/_header.html')}
+    <div class="new_detail notice_detail container">
+      <div class="content-container mobile_hidden">
+        <div class="left-content">
+          <h1 id="img1">
+            개인정보처리방침 이용약관 개정
+            <br />
+            <p class="date">2023-09-19</p>
+          </h1>
+        </div>
+
+        <div class="right-content">
+          <div class="contentMarker" data-marker-content="img1">
+            <p>안녕하세요.</p>
+
+            <p>
+              달콤커피(㈜다날에프엔비) 개인정보처리방침 이용약관이 개정되어 변경
+              내용 안내드립니다.
+            </p>
+            <p><span>.</span>변경 일정</p>
+
+            <div class="button_item">
+              <a href="/dist/new.html" class="common_button btn">목록보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    ${require('./include/_footer.html')}
+    <script>
+      console.clear();
+
+      gsap.defaults({ overwrite: "auto" });
+
+      gsap.set(".left-content > *", { xPercent: -50, yPercent: -50 });
+
+      // Set up our scroll trigger
+      const ST = ScrollTrigger.create({
+        trigger: ".content-container",
+        start: "top top",
+        end: "bottom bottom",
+        onUpdate: getCurrentSection,
+        pin: ".left-content",
+      });
+
+      const contentMarkers = gsap.utils.toArray(".contentMarker");
+
+      // Set up our content behaviors
+      contentMarkers.forEach((marker) => {
+        marker.content = document.querySelector(
+          `#${marker.dataset.markerContent}`
+        );
+
+        if (marker.content.tagName === "IMG") {
+          gsap.set(marker.content, { transformOrigin: "center" });
+
+          marker.content.enter = function () {
+            gsap.fromTo(
+              marker.content,
+              { autoAlpha: 0, rotateY: -30 },
+              { duration: 0.3, autoAlpha: 1, rotateY: 0 }
+            );
+          };
+        } else if (marker.content.tagName === "BLOCKQUOTE") {
+          gsap.set(marker.content, { transformOrigin: "left center" });
+
+          marker.content.enter = function () {
+            gsap.fromTo(
+              marker.content,
+              { autoAlpha: 0, rotateY: 50 },
+              { duration: 0.3, autoAlpha: 1, rotateY: 0 }
+            );
+          };
+        }
+
+        marker.content.leave = function () {
+          gsap.to(marker.content, { duration: 0.1, autoAlpha: 0 });
+        };
+      });
+
+      // Handle the updated position
+      let lastContent;
+      function getCurrentSection() {
+        let newContent;
+        const currScroll = scrollY;
+
+        // Find the current section
+        contentMarkers.forEach((marker) => {
+          if (currScroll > marker.offsetTop) {
+            newContent = marker.content;
+          }
+        });
+
+        // If the current section is different than that last, animate in
+        if (
+          newContent &&
+          (lastContent == null || !newContent.isSameNode(lastContent))
+        ) {
+          // Fade out last section
+          if (lastContent) {
+            lastContent.leave();
+          }
+
+          // Animate in new section
+          newContent.enter();
+
+          lastContent = newContent;
+        }
+      }
+
+      const media = window.matchMedia("screen and (max-width: 600px)");
+      ScrollTrigger.addEventListener("refreshInit", checkSTState);
+      checkSTState();
+
+      function checkSTState() {
+        if (media.matches) {
+          ST.disable();
+        } else {
+          ST.enable();
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Name</title>
+
+<!-- CSS -->
+<link
+  rel="stylesheet"
+  href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="../assets/css/reset.css" />
+<link rel="stylesheet" href="../assets/css/common.css" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="../assets/css/sub.css" />
+
+<link rel="stylesheet" href="../assets/css/media.css" />
+
+<!-- AOS animation library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Jquery -->
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"
+></script>
+<!-- AOS animation library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<!-- Bootstrap js  -->
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Common script -->
+<script src="../assets/js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "adw8piw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header class="header">
+  <div class="lnb_bg"></div>
+  <div class="header_inn">
+    <a href="/dist/main.html" class="head_img">
+      <img src="/images/logo.svg" alt="house talk" />
+    </a>
+    <ul class="gnb">
+      <li>
+        <a href="" class="header_link">Dal.komm</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/brand_story.html">브랜드 이야기</a></li>
+              <li><a href="/dist/appIntro.html">App 소개</a></li>
+              <li><a href="/dist/danal_intro.html">다날에프엔비 이야기</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">메뉴</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/menu.html">메뉴</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="/dist/findStore.html" class="header_link">매장</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/findStore.html">매장찾기</a></li>
+              <li><a href="/dist/global.html">글로벌 달콤</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link"
+          ><span>새로운 소식 </span><i class="ico dot"><span>new</span></i></a
+        >
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li><a href="/dist/new.html">뉴스</a></li>
+              <li><a href="/dist/notice.html">공지사항</a></li>
+              <li>
+                <a href="/dist/story.html">달콤 스토리</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="" class="header_link">창업안내</a>
+        <div class="depth2">
+          <div class="depth2_wrapp">
+            <ul class="lnb">
+              <li>
+                <a href="/dist/franchiseeIntro.html">가맹점 개설 안내</a>
+              </li>
+              <li><a href="/dist/startup.html">창업 상담 신청</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="shop_btn">
+        <a href="https://smartstore.naver.com/dalkommcoffee"
+          ><span class="stress">SHOP</span></a
+        >
+      </li>
+    </ul>
+    <div class="head_contact">
+      <button class="hamburger">
+        <span>line</span>
+        <span>line</span>
+        <span>line</span>
+      </button>
+    </div>
+  </div>
+  <div class="all_search_input" style="display: none">
+    <input type="search" placeholder="검색어를 입력하세요." />
+    <button type="button" class="header_search_btn cursor-pointer"></button>
+  </div>
+
+  <!-- mobile menu -->
+  <ul class="mo_menu">
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>회사소개</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/brand_story.html">브랜드 이야기</a></li>
+        <li><a href="/dist/appIntro.html">App 소개</a></li>
+        <li><a href="/dist/danal_intro.html">다날에프엔비 이야기</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>건축갤러리</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/menu.html">메뉴</a></li>
+      </ul>
+    </li>
+
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>하우스톡 소식</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/findStore.html">매장찾기</a></li>
+        <li><a href="/dist/global.html">글로벌 달콤 </a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>미디어</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/new.html">뉴스</a></li>
+        <li><a href="/dist/notice.html">공지사항</a></li>
+        <li><a href="/dist/story.html">달콤 스토리</a></li>
+      </ul>
+    </li>
+    <li class="mo_list depth1">
+      <a href="#" class="mo_item"
+        ><span>상담/신청</span><img src="/images/ic_arrow_down.svg" alt=""
+      /></a>
+      <ul class="mo_snb">
+        <li><a href="/dist/franchiseeIntro.html">가맹점 개설 안내</a></li>
+        <li><a href="/dist/startup.html">창업 상담 신청</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+
+    <div class="new_detail container">
+      <div class="content-container mobile_hidden">
+        <div class="left-content">
+          <h1 id="img1">
+            개인정보처리방침 이용약관 개정
+            <br />
+            <p class="date">2023-09-19</p>
+          </h1>
+        </div>
+
+        <div class="right-content">
+          <div class="contentMarker" data-marker-content="img1">
+            <p>안녕하세요.</p>
+
+            <p>
+              달콤커피(㈜다날에프엔비) 개인정보처리방침 이용약관이 개정되어 변경
+              내용 안내드립니다.
+            </p>
+
+            <p style="text-align: justify; margin-bottom: 11px">
+              <span style="font-size: 10pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: "
+                    ><b
+                      ><span style="font-size: 12pt"
+                        ><span style="line-height: 107%"
+                          ><span style="font-family: 나눔스퀘어_ac"
+                            >∙
+                          </span></span
+                        ></span
+                      ></b
+                    ><strong
+                      ><span style="font-size: 12pt"
+                        ><span style="line-height: 107%">변경 일정</span></span
+                      ></strong
+                    ></span
+                  ></span
+                ></span
+              >
+            </p>
+
+            <p
+              style="
+                margin-left: 13px;
+                text-align: justify;
+                margin-bottom: 11px;
+              "
+            >
+              <span style="font-size: 10pt"
+                ><span style="line-height: 107%"
+                  ><span style="font-family: "
+                    ><b
+                      ><span lang="EN-US" style="font-size: 11pt"
+                        ><span style="line-height: 107%">&nbsp; - </span></span
+                      ></b
+                    ><b
+                      ><span style="font-size: 11pt"
+                        ><span style="line-height: 107%"
+                          >사전 공지일: 2023년 09월 19일<br />
+                          &nbsp; - 개정 시행일: 2023년 09월 20일</span
+                        ></span
+                      ></b
+                    ></span
+                  ></span
+                ></span
+              >
+            </p>
+
+            <p style="margin-left: 13px">
+              <span style="font-size: 12pt"
+                ><span style="font-family: 굴림"
+                  ><span style="font-size: 8.5pt"
+                    ><span style="font-family: "
+                      ><span style="color: #333333"
+                        >본 개정에 동의하지 않으시는 경우 거부의사
+                        표시(회원탈퇴)를 하실 수 있으며, 거부의사를 표시하지
+                        않으신 경우 개정에 동의하신 것으로 간주됩니다.</span
+                      ></span
+                    ></span
+                  ></span
+                ></span
+              >
+            </p>
+
+            <p style="text-align: justify; margin-bottom: 11px">&nbsp;</p>
+
+            <ul>
+              <li style="text-align: left; margin-bottom: 11px">
+                <span style="font-size: 10pt"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: "
+                      ><b
+                        ><span style="font-size: 12pt"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 나눔스퀘어_ac"
+                              >∙
+                            </span></span
+                          ></span
+                        ></b
+                      ><strong
+                        ><span style="font-size: 12pt"
+                          ><span style="line-height: 107%"
+                            >변경 내용</span
+                          ></span
+                        ></strong
+                      ></span
+                    ></span
+                  ></span
+                >
+              </li>
+              <li style="text-align: left; margin-bottom: 11px">
+                <span style="font-size: 10pt"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: "
+                      ><span style="font-size: 12pt"
+                        ><span style="line-height: 107%"
+                          >&nbsp; &nbsp; &lt;신설&gt; 제2조 민감정보의 공개
+                          가능성 및 비공개를 선택하는 방법</span
+                        ></span
+                      ></span
+                    ></span
+                  ></span
+                ><br />
+                <span style="font-size: 10pt"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: "
+                      ><span style="font-size: 12pt"
+                        ><span style="line-height: 107%"
+                          >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp;&gt; 조항은 추가되었으나 민감정보는 수집하지
+                          않음</span
+                        ></span
+                      ></span
+                    ></span
+                  ></span
+                >
+              </li>
+              <li style="text-align: left; margin-bottom: 11px">
+                <span style="font-size: 10pt"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: "
+                      ><span style="font-size: 12pt"
+                        ><span style="line-height: 107%"
+                          >&nbsp; &nbsp; &lt;신설&gt; 제3조 만 14세 미만 아동의
+                          개인정보 처리에 관한 사항<br />
+                          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp;&gt; 조항은 추가되었으나 만 14세 미만 아동의
+                          개인정보를 처리하지 않음</span
+                        ></span
+                      ></span
+                    ></span
+                  ></span
+                >
+              </li>
+              <li style="text-align: left; margin-bottom: 11px">
+                <span style="font-size: 10pt"
+                  ><span style="line-height: 107%"
+                    ><span style="font-family: "
+                      ><span style="font-size: 12pt"
+                        ><span style="line-height: 107%"
+                          >&nbsp; &nbsp; &lt;변경&gt; 제4조 개인정보 자동수집
+                          장치의 설치/운영과 행태정보 처리 및 거부 등에 관한
+                          사항<br />
+                          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp;&gt; 행태정보 관련 연락처 추가</span
+                        ></span
+                      ></span
+                    ></span
+                  ></span
+                >
+                <ul>
+                  <li style="text-align: left; margin-bottom: 11px">
+                    <span style="font-size: 10pt"
+                      ><span style="line-height: 107%"
+                        ><span style="font-family: "
+                          ><span style="font-size: 12pt"
+                            ><span style="line-height: 107%"
+                              >​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</span
+                            ></span
+                          ></span
+                        ></span
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li style="text-align: left; margin-bottom: 11px">
+                <strong
+                  ><span style="font-size: 10pt"
+                    ><span style="line-height: 107%"
+                      ><span style="font-family: "
+                        ><span style="font-size: 12pt"
+                          ><span style="line-height: 107%"
+                            ><span style="font-family: 나눔스퀘어_ac">∙ </span
+                            >개인정보 처리방침 시행일자 변경</span
+                          ></span
+                        ></span
+                      ></span
+                    ></span
+                  ></strong
+                >
+              </li>
+              <li style="text-align: left; margin-bottom: 11px">
+                <p
+                  style="
+                    margin-left: 13px;
+                    text-align: justify;
+                    margin-bottom: 11px;
+                  "
+                >
+                  <span style="font-size: 10pt"
+                    ><span style="line-height: 107%"
+                      ><span style="font-family: "
+                        ><b
+                          ><span lang="EN-US" style="font-size: 11pt"
+                            ><span style="line-height: 107%"
+                              >&nbsp; -
+                            </span></span
+                          ></b
+                        ><b
+                          ><span style="font-size: 11pt"
+                            ><span style="line-height: 107%"
+                              >2023년 09월 20일</span
+                            ></span
+                          ></b
+                        ></span
+                      ></span
+                    ></span
+                  >
+                </p>
+              </li>
+            </ul>
+
+            <p style="text-align: left; margin-bottom: 11px">&nbsp;</p>
+
+            <p style="text-align: left; margin-bottom: 11px">
+              앞으로도 보다 나은 서비스로 보답하겠습니다.
+            </p>
+
+            <p style="text-align: left; margin-bottom: 11px">감사합니다.</p>
+          </div>
+          <a href="#" class="btn">목록보기</a>
+        </div>
+      </div>
+
+      <div class="content-container pc_hidden">
+        <div class="left-content1">
+          <h1>
+            달콤커피, ‘팀 코리아’ 달콤한 할인 행사 전개
+            <br />
+            <p class="date">2024-07-31</p>
+          </h1>
+        </div>
+
+        <div class="right-content1">
+          <div class="contentMarker">
+            <img src="/images/newdetail.png" alt="" />
+
+            <p style="margin-top: 36px">
+              결제전문기업 다날의 F&B 계열사 다날에프엔비(이하 달콤커피)는 오는
+              27일부터 올림픽 종료일인 8월 12일까지 달콤커피 직영매장을 이용하는
+              고객 대상으로 올림픽에 출전하는 대한민국 선수단의 선전을 기원하는
+              ‘팀 코리아! 달콤에서 달콤하게 응원합니다!’를 진행한다고 밝혔다.
+              행사 메뉴는 아메리카노, 카페라떼 등 커피류와 시그니처 메뉴
+              허니큐브, 에이드, 시즌 음료 등 인기 메뉴 10종으로 행사 기간 동안
+              20% 할인된 가격에 제공한다. 대상 매장은 달콤커피 교대역점,
+              경희의료원점, 천호대로점, 광주쌍령DT점, 신세계김해점 총 5개
+              매장이다.
+            </p>
+            <br />
+            <p>
+              특히, 행사메뉴인 허니큐브는 곱게 갈은 에스프레소 큐브 얼음을 꿀과
+              우유와 함께 섞어 마시는 부드럽고 달콤한 맛이 특징인 음료이다. 이
+              특징적인 맛은 고객들에게 꾸준한 사랑을 받아왔으며, 그 결과
+              큐브시리즈는 지난 10년동안 총 600만 잔 이상의 판매고를 기록했다는
+              것이 업체 측 설명이다. 큐브시리즈는 달콤커피의 대표 메뉴로
+              고객들의 끊임없는 사랑을 받아왔으며, 에스프레소를 활용한 큐브,
+              허니큐브부터 과일 다이스를 활용한 베리큐브, 망고큐브 등으로
+              라인업을 확장하여 과일 음료의 새로운 가능성을 제시했다. 이는 과일
+              음료를 더 맛있고 다양하게 즐기기 위한 달콤커피의 지속적인 고민과
+              연구의 결과물이다.
+            </p>
+            <br />
+            <p>
+              이번 행사는 대한민국을 향한 응원의 메시지를 전하고 한마음이 되는
+              분위기를 조성하기 위한 취지로, 달콤커피만의 시그니처 메뉴를 저렴한
+              가격에 즐길 수 있게 되었다. 한편, 달콤커피 관계자는 “고객들과 함께
+              국가대항 스포츠를 응원하는 마음을 나누고자 이번 행사를
+              마련했다”라며 “응원의 마음들을 모아 대한민국의 선전을 기원하며,
+              무더운 여름 매장을 이용하는 고객분들에게 시원한 음료와 가격을
+              제공하겠다”고 전했다.
+            </p>
+
+            <div class="button_item">
+              <a href="/dist/new.html" class="common_button btn">목록보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer container">
+  <div class="footer_wrap">
+    <img src="/images/logo.svg" class="logo" />
+
+    <ul class="footer_ul dropdown">
+      <li class="dropdown-header">
+        <strong
+          >고객을 위한 달콤<a href="#forC" class="btn more"
+            ><i class="ico1 acc-arr"></i></a
+        ></strong>
+        <ul class="dropdown-content">
+          <li><a href="/customerCS" class="em">문의하기 (Contact Us)</a></li>
+          <li><a href="tel:16611399">고객상담센터 1661-1399</a></li>
+        </ul>
+      </li>
+      <li class="dropdown-header ">
+        <strong
+          >파트너를 위한 달콤<a href="#forP" class="btn more"
+            ><i class="ico1 acc-arr"></i></a
+        ></strong>
+        <ul class="dropdown-content">
+          <li><a href="/partnerCS">협력업체 문의</a></li>
+          <li><a href="/franchiseeCS">가맹 문의</a></li>
+          <li><a href="/marketingCS">제휴·마케팅 문의</a></li>
+          <li>
+            <a href="/@resource/dalkomm_introduce_v20240612.pdf" target="_blank"
+              >브랜드 소개서</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+        <strong
+          >개인정보 보호 및 약관<a href="#forT" class="btn more"
+            ><i class="ico1 acc-arr"></i></a
+        ></strong>
+        <ul class="dropdown-content">
+          <li><a href="/privacy">개인정보 처리방침</a></li>
+          <li><a href="/serviceTerms">서비스 이용약관</a></li>
+          <li><a href="/locationTerms">위치기반서비스 이용약관</a></li>
+          <li><a href="/videoTerms">영상정보 처리기기 운영관리 방침</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- <div class="footer_items">
+      <div class="footer_item">
+        <div class="footer_link">
+          <strong
+            >고객을 위한 달콤
+            <a href="#forC" class="btn more"><i class="ico"></i></a>
+          </strong>
+        </div>
+        <br />
+        <a href="" class="contact_link">문의하기 (Contact Us)</a> <br />
+        <a href="" class="link">고객상담센터 1661-1399</a>
+      </div>
+      <div class="footer_item">
+        <div class="footer_link">
+          <strong
+            >파트너를 위한 달콤 <a href="" class="link">협력업체 문의</a> <br />
+            <a href="" class="link">가맹 문의</a> <br />
+            <a href="" class="link">제휴·마케팅 문의</a> <br />
+            <a href="" class="link">브랜드 소개서</a>
+          </strong>
+        </div>
+      </div>
+
+      <div class="footer_item">
+        <strong>개인정보 보호 및 약관</strong><br />
+        <a href="" class="link">개인정보 처리방침</a> <br />
+      </div>
+    </div> -->
+  </div>
+  <div class="max-wrap flex-both-top">
+    <div class="select-wrap">
+      <select title="FAMILY SITE" class="select family">
+        <option value="http://www.dalkomm.com/">FAMILY SITE</option>
+        <option value="https://danal.co.kr/">다날</option>
+        <option value="https://www.danalpay.com/main/main.aspx">
+          다날페이먼트
+        </option>
+        <option value="http://www.danalenter.co.kr/index.do">
+          다날엔터테인먼트
+        </option>
+        <option value="https://www.beatcorp.io/pc">비트코퍼레이션</option>
+        <option value="http://www.danalfintech.com/">다날핀테크</option>
+        <option value="http://www.danal.jp/">다날 재팬</option>
+        <option value="https://www.flexpay.co.kr/">플렉스페이</option>
+        <option value="http://www.ssocioliving.com/default/">쏘시오리빙</option>
+        <option value="http://www.bartong.co.kr/pages/">바통</option>
+        <option value="https://befamily.co.kr/">비밀리</option>
+        <option value="https://www.wannai.co.kr/">워너아이</option>
+        <option value="https://payprotocol.io/">페이프로토콜</option>
+      </select>
+    </div>
+    <div class="copyright-wrap">
+      <p class="copyright">
+        <a href="" class="">주)다날에프엔비 + <br class="mo" /></a>
+        <span class="only-pc"> | </span>주소지 : 경기도 성남시 분당구
+        황새울로312번길 5, 5층(서현동, 세광빌딩)
+        <br />
+        대표이사 : 심순열<span> | </span> 사업자등록번호 : 144-81-09353<br
+          class="only-mo"
+        /><span class="only-pc"> | </span>통신판매업신고 : 제 2016-성남분당-0680
+        호<br />
+        Copyright ⓒ 2022 (주)달콤 All Rights Reserved.
+      </p>
+      <div class="playstore">
+        <a
+          class="btn_apple"
+          target="_blank"
+          href="https://apps.apple.com/kr/app/%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC/id1097036744"
+          ><i class="ico apple"></i> App Store</a
+        >
+        <a
+          class="btn_google"
+          target="_blank"
+          href="https://play.google.com/store/search?q=%EB%8B%AC%EC%BD%A4%EC%BB%A4%ED%94%BC&amp;c=apps"
+          ><i class="ico google"></i>Google Play</a
+        >
+        <a class="qr" href="/appIntro">
+          <img src="/images/QRCode.jpg" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll(".btn").forEach((header) => {
+      header.addEventListener("click", function () {
+        this.parentElement.classList.toggle("active");
+        console.log("click");
+      });
+    });
+  </script>
+</footer>
+
+    <script>
+      console.clear();
+
+      gsap.defaults({ overwrite: "auto" });
+
+      gsap.set(".left-content > *", { xPercent: -50, yPercent: -50 });
+
+      // Set up our scroll trigger
+      const ST = ScrollTrigger.create({
+        trigger: ".content-container",
+        start: "top top",
+        end: "bottom bottom",
+        onUpdate: getCurrentSection,
+        pin: ".left-content",
+      });
+
+      const contentMarkers = gsap.utils.toArray(".contentMarker");
+
+      // Set up our content behaviors
+      contentMarkers.forEach((marker) => {
+        marker.content = document.querySelector(
+          `#${marker.dataset.markerContent}`
+        );
+
+        if (marker.content.tagName === "IMG") {
+          gsap.set(marker.content, { transformOrigin: "center" });
+
+          marker.content.enter = function () {
+            gsap.fromTo(
+              marker.content,
+              { autoAlpha: 0, rotateY: -30 },
+              { duration: 0.3, autoAlpha: 1, rotateY: 0 }
+            );
+          };
+        } else if (marker.content.tagName === "BLOCKQUOTE") {
+          gsap.set(marker.content, { transformOrigin: "left center" });
+
+          marker.content.enter = function () {
+            gsap.fromTo(
+              marker.content,
+              { autoAlpha: 0, rotateY: 50 },
+              { duration: 0.3, autoAlpha: 1, rotateY: 0 }
+            );
+          };
+        }
+
+        marker.content.leave = function () {
+          gsap.to(marker.content, { duration: 0.1, autoAlpha: 0 });
+        };
+      });
+
+      // Handle the updated position
+      let lastContent;
+      function getCurrentSection() {
+        let newContent;
+        const currScroll = scrollY;
+
+        // Find the current section
+        contentMarkers.forEach((marker) => {
+          if (currScroll > marker.offsetTop) {
+            newContent = marker.content;
+          }
+        });
+
+        // If the current section is different than that last, animate in
+        if (
+          newContent &&
+          (lastContent == null || !newContent.isSameNode(lastContent))
+        ) {
+          // Fade out last section
+          if (lastContent) {
+            lastContent.leave();
+          }
+
+          // Animate in new section
+          newContent.enter();
+
+          lastContent = newContent;
+        }
+      }
+
+      const media = window.matchMedia("screen and (max-width: 600px)");
+      ScrollTrigger.addEventListener("refreshInit", checkSTState);
+      checkSTState();
+
+      function checkSTState() {
+        if (media.matches) {
+          ST.disable();
+        } else {
+          ST.enable();
+        }
+      }
+    </script>
+  </body>
+</html>

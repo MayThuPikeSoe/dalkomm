@@ -1490,3 +1490,17 @@ body {
   color: var(--bs-white);
   border: none;
 }
+
+/* notice detail */
+.notice_detail p {
+  text-align: justify;
+  margin-bottom: 11px;
+  margin-top: 36px;
+}
+.notice_detail p:nth-child(3) {
+  font-size: 16px;
+  font-weight: bold;
+}
+.notice_detail p:nth-child(3) span {
+  margin-right: 10px;
+}
