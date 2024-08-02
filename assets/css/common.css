@@ -166,7 +166,7 @@ img {
 /* header start */
 .header {
   height: 100px;
-  background: rgba(225, 225, 225, 1);
+  background: var(--bs-white);
   border-bottom: 1px solid #dedede;
   position: fixed;
   top: 0;
@@ -251,7 +251,7 @@ img {
   pointer-events: none;
 }
 .lnb_bg {
-  background: rgba(225, 225, 225, 1);
+  background: var(--bs-white);
   width: 100%;
   height: 0;
   position: absolute;
