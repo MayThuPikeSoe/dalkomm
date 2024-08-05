@@ -300,6 +300,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  user-select: none !important;
   margin-top: 60px;
 }
 .find_store svg {
@@ -325,25 +326,31 @@ body {
   height: 75px;
   margin-top: 0;
   background-color: var(--bs-white);
+  border: none;
+  outline: none;
 }
 .find_store .marginal_finder form {
   border-width: 0px 0px 1px 0px;
   border-bottom: 1px solid var(--black);
 }
 .find_store .marginal_finder_input {
-  height: 54px;
-  width: 250px;
+  height: 60px;
+  width: 230px;
   padding: 0.3125vw 0.5208333333vw;
   font-family: "NanumSquare";
   font-weight: 700;
   font-size: 18px;
   color: var(--black);
   outline: none;
+  border: none;
   background-color: var(--bs-white);
 
   vertical-align: top;
 }
 
+.find_store .marginal_finder_submit {
+  padding-top: 10px;
+}
 .notice.find_store .notice_list_item {
   padding: 0px 0 56px 0;
   border-bottom: 2px solid rgba(34, 34, 34, 0.2);

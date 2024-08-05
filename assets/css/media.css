@@ -25,6 +25,9 @@
 }
 
 @media screen and (max-width: 1470.98px) {
+  .floating {
+    left: 80%;
+  }
   .signature-item_container {
     width: auto !important;
   }
@@ -762,7 +765,7 @@
   }
   .marginal_item_left img {
     width: 350px;
-    height: 420px;
+    height: 370px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-top: 110px;
@@ -832,18 +835,13 @@
     padding: 140px 0 160px;
   } */
   /* find store */
+  .find_store .marginal_finder {
+    width: 200px;
+  }
   .find_store .marginal_finder_input {
     height: 54px;
-    width: 200px;
-    padding: 0.3125vw 0.5208333333vw;
-    font-family: "NanumSquare";
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--black);
-    text-transform: capitalize;
-    outline: none;
-    background-color: var(--bs-white);
-    vertical-align: top;
+    width: 160px;
+    font-size: 14px;
   }
   .find_store.notice {
     padding: 0px;
@@ -1623,11 +1621,9 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  /* .new-items_nav-wrapper {
-    width: calc(100% - 1.976744186vw);
-    left: 13.976744186vw;
-    top: 85.3488372093vw;
-  } */
+  .floating {
+    left: 70%;
+  }
 
   .new-items_item.swiper-slide-active {
     min-width: 180px;
@@ -1920,7 +1916,7 @@
     background-size: 100vw 70.2325581395vw;
     height: 220vw;
   }
-  
+
   .new-items_header_cont {
     padding-left: 20px;
   }
